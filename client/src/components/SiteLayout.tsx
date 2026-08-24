@@ -37,6 +37,13 @@ export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [quoteSent, setQuoteSent] = useState(false);
   useEffect(() => setOpen(false), [location]);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const updateScrollState = () => setScrolled(window.scrollY > 12);
+    updateScrollState();
+    window.addEventListener("scroll", updateScrollState, { passive: true });
+    return () => window.removeEventListener("scroll", updateScrollState);
+  }, []);
   const isActive = (href: string) => location === href || (href === "/about" && location === "/origin") || (href === "/products" && location.startsWith("/products"));
   const updateQuoteState = (value: boolean) => { setQuoteOpen(value); if (!value) setQuoteSent(false); };
   const handleQuoteSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -55,7 +62,7 @@ export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
     window.location.href = `mailto:info@karossyfoods.com?subject=${subject}&body=${body}`;
     setQuoteSent(true);
   };
-  return <header className={inverse ? "site-header site-header-inverse" : "site-header"}>
+  return <header className={`${inverse ? "site-header site-header-inverse" : "site-header"}${scrolled ? " site-header-scrolled" : ""}`}>
     <div className="site-shell header-inner">
       <Link href="/" className="brand-link"><BrandMark light={inverse} /></Link>
       <nav className="desktop-nav" aria-label="Main navigation">{navItems.map((item) => <Link key={item.href} href={item.href} data-nav-hint={item.hint} className={isActive(item.href) ? "nav-link nav-link-active" : "nav-link"}>{item.label}</Link>)}</nav>

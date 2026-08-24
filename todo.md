@@ -98,3 +98,9 @@
 
 - [x] Further reduce desktop sticky-header vertical spacing.
 - [x] Verify the refined compact header, then save a checkpoint.
+
+# Scroll Shadow & Tablet Header Checklist
+
+- [x] Define scroll-state shadow behavior and tablet header spacing.
+- [x] Implement the scroll shadow and tablet-specific header layout.
+- [x] Verify desktop, tablet, and mobile header behavior, then save a checkpoint.

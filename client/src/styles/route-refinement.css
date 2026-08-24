@@ -1,5 +1,6 @@
 /* Meridian Pantry refinement: tactile discovery imagery and traceable route cues extend into the home and contact journeys. */
 .products-section { position:relative; overflow:hidden; }
+.product-selection-compact.section-pad { padding-top:50px; }.product-selection-compact .route-kicker { color:#585146; }
 /* Meridian Pantry refinement: every stage follows a visible sourcing route, while product imagery remains tactile, abundant and buyer-led. */
 .hero-headline-line { display:block; }
 @media (min-width:901px) { .home-page .hero-copy { width:min(880px,68%); }.home-page .hero h1 { max-width:none; font-size:clamp(56px,5.3vw,82px); }.home-page .hero-headline-line { white-space:nowrap; } }

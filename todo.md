@@ -340,6 +340,12 @@
 - [x] Retain readable product cards, category links, and responsive layout behavior.
 - [x] Verify the restored section at desktop and mobile dimensions, then save a checkpoint.
 
+# Product Selection Visual-Edit Normalization Checklist
+
+- [x] Preserve the requested 50px Product Selection top spacing and darker route-label colour.
+- [x] Remove duplicated visual-editor inline styles from the homepage product-section markup.
+- [x] Verify the normalized section at desktop and mobile dimensions, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

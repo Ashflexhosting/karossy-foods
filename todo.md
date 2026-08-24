@@ -328,6 +328,12 @@
 - [x] Verify that the homepage and inner-page headers match the pre-label version.
 - [x] Save the restored version and confirm the reversal.
 
+# Homepage Hero Overlay Lightening Checklist
+
+- [x] Review the current black hero overlay and define a lighter contrast-safe opacity.
+- [x] Apply the lighter overlay across desktop and mobile homepage hero treatments.
+- [x] Verify image visibility and copy contrast, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

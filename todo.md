@@ -77,3 +77,9 @@
 
 - [x] Align each mobile navigation icon horizontally beside its label.
 - [x] Verify the corrected mobile menu, then save a checkpoint.
+
+# Footer & Mobile Navigation Refinement Checklist
+
+- [x] Define the Ashflex footer attribution, WhatsApp quick-contact link, and active-route emphasis.
+- [x] Implement the footer attribution and mobile navigation refinements.
+- [x] Verify the footer and mobile menu changes, then save a checkpoint.

@@ -1,0 +1,3 @@
+/* Meridian Pantry footer refinement: a light-touch Ashflex credit supports the Karossy Foods ownership line. */
+.footer-credit { color:#f3a72d; font-size:10px; font-weight:800; letter-spacing:.05em; text-transform:none; transition:color .16s var(--ease-out); }.footer-credit:hover { color:#fff; }
+@media (max-width:680px) { .footer-credit { font-size:9px; } }

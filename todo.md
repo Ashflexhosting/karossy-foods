@@ -28,3 +28,12 @@
 - [x] Define a larger, responsive supporting-text scale that preserves the editorial hierarchy.
 - [x] Apply the revised body and support text scale across the public pages.
 - [x] Verify desktop and mobile readability, then save a checkpoint.
+
+# Product Detail & Verified Specification Checklist
+
+- [x] Confirm which product-pack and specification values are available in approved sources. The current master document does not include exact pack sizes, MOQ, shelf life, storage, ingredients, or product-specific packaging data.
+- [x] Set commercial pack and specification fields to the approved “available on request” state until product-by-product data is supplied.
+- [x] Design a shared buyer-focused product-detail page system for all approved categories.
+- [x] Build the category pages and connect product dossier cards to them.
+- [x] Replace dossier placeholders with the approved “available on request” commercial detail state.
+- [x] Verify all product journeys and save a checkpoint.

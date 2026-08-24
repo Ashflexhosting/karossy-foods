@@ -66,3 +66,7 @@
 - The full-width dossiers alternate paper, oat and botanical-tinted buyer briefs so their visual sequence feels like a curated sourcing journal instead of a repeated administrative template.
 
 - Home category discovery combines full-bleed ingredient imagery with the product names, while the contact page has a subtle crop-to-destination route cue to ensure every key journey feels traceable and provenance-led.
+
+- Dedicated category pages are structured as **quote-led sourcing briefs**: each combines a tactile product image, the buyer use case, clear “available on request” commercial fields, and a direct route back to an enquiry action without inventing product-specific claims.
+
+- Detail pages use a four-step **Meridian handover sequence**—buyer brief, commercial brief, category range and export handover—so traceability and buyer movement structure the full page rather than acting as occasional decoration.

@@ -88,3 +88,8 @@
 
 - [x] Increase desktop navigation text size and spacing.
 - [x] Verify the enlarged header navigation, then save a checkpoint.
+
+# Compact Header Spacing Checklist
+
+- [x] Reduce sticky header vertical padding while retaining readable navigation.
+- [x] Verify the compact header, then save a checkpoint.

@@ -140,3 +140,9 @@
 - [x] Upload the supplied product-sheet artwork for durable website use.
 - [x] Replace the corresponding category-page placeholders with approved product details and artwork.
 - [x] Verify the enriched product pages at desktop and mobile sizes, then save a checkpoint.
+
+# Compact Product Information Checklist
+
+- [x] Define product information accordion groups and the product-level quote-modal trigger.
+- [x] Implement accordion tabs and the wholesale inquiry action beside approved product details.
+- [x] Verify compact product details and quote interaction at desktop and mobile sizes, then save a checkpoint.

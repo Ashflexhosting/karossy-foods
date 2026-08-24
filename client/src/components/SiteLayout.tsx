@@ -7,6 +7,7 @@ import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import "@/styles/shared-logo.css";
+import "@/styles/sticky-header.css";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";
 const logo = "/manus-storage/karossy-foods-logo_dbfe97cf.png";
@@ -16,6 +17,7 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Our Products", href: "/products" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Export & Wholesale", href: "/export" },
   { label: "Quality & Sourcing", href: "/quality" },
 ];
@@ -40,7 +42,7 @@ export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
 }
 
 export function SiteFooter() {
-  return <footer className="site-footer"><div className="site-shell footer-grid"><div className="footer-brand"><BrandMark light /><p>Premium African foods, sourced from Nigeria.</p></div><div className="footer-list"><span className="footer-label">Explore</span><Link href="/about">About us</Link><Link href="/products">Our products</Link><Link href="/export">Export & wholesale</Link><Link href="/quality">Quality & sourcing</Link></div><div className="footer-list"><span className="footer-label">Speak with us</span><a href="mailto:info@karossyfoods.com">info@karossyfoods.com</a><a href="tel:+2348036481214">+234 803 648 1214</a><Link href="/contact">Request a quote <ArrowUpRight size={14} /></Link></div></div><div className="site-shell footer-base"><span>© 2026 Karossy Foods Limited</span><span>Authentic African Foods. From Nigeria to the World.</span></div></footer>;
+  return <footer className="site-footer"><div className="site-shell footer-grid"><div className="footer-brand"><BrandMark light /><p>Premium African foods, sourced from Nigeria.</p></div><div className="footer-list"><span className="footer-label">Explore</span><Link href="/about">About us</Link><Link href="/products">Our products</Link><Link href="/gallery">Gallery</Link><Link href="/export">Export & wholesale</Link><Link href="/quality">Quality & sourcing</Link></div><div className="footer-list"><span className="footer-label">Speak with us</span><a href="mailto:info@karossyfoods.com">info@karossyfoods.com</a><a href="tel:+2348036481214">+234 803 648 1214</a><Link href="/contact">Request a quote <ArrowUpRight size={14} /></Link></div></div><div className="site-shell footer-base"><span>© 2026 Karossy Foods Limited</span><span>Authentic African Foods. From Nigeria to the World.</span></div></footer>;
 }
 
 export function PageLead({ eyebrow, title, description }: { eyebrow: string; title: ReactNode; description: string }) {

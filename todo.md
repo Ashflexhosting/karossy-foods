@@ -54,3 +54,9 @@
 - [x] Integrate the leaf-and-S monogram with the supplied Karossy Foods wordmark.
 - [x] Strengthen the Meridian route cues across the homepage journey.
 - [x] Verify shared branding and route cues at desktop and mobile sizes, then save a checkpoint.
+
+# Sticky Header & Gallery Checklist
+
+- [x] Define sticky header scroll behavior and gallery content groups.
+- [x] Build the sticky navigation and the dedicated Gallery page.
+- [x] Verify the gallery journey and sticky header at desktop and mobile sizes, then save a checkpoint.

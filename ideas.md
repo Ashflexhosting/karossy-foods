@@ -72,3 +72,5 @@
 - Detail pages use a four-step **Meridian handover sequence**—buyer brief, commercial brief, category range and export handover—so traceability and buyer movement structure the full page rather than acting as occasional decoration.
 
 - The leaf-and-S monogram is the primary route seal beside the supplied wordmark, and homepage stages are visibly marked from origin through handover to make the sourcing journey explicit.
+
+- The Gallery is a **visual sourcing journal**, not a generic image grid: uneven editorial apertures, product-route captions and a final supply handover keep every image connected to an origin and buyer conversation.

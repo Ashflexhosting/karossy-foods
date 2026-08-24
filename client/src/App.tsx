@@ -12,8 +12,9 @@ import Export from "./pages/Export";
 import Quality from "./pages/Quality";
 import Contact from "./pages/Contact";
 import ProductDetail from "./pages/ProductDetail";
+import Gallery from "./pages/Gallery";
 import "./styles/readability-enhancement.css";
 import "./styles/route-refinement.css";
 
-function Router() { return <Switch><Route path="/" component={Home} /><Route path="/about" component={About} /><Route path="/origin" component={About} /><Route path="/products/:slug" component={ProductDetail} /><Route path="/products" component={Products} /><Route path="/export" component={Export} /><Route path="/quality" component={Quality} /><Route path="/contact" component={Contact} /><Route component={NotFound} /></Switch>; }
+function Router() { return <Switch><Route path="/" component={Home} /><Route path="/about" component={About} /><Route path="/origin" component={About} /><Route path="/products/:slug" component={ProductDetail} /><Route path="/products" component={Products} /><Route path="/gallery" component={Gallery} /><Route path="/export" component={Export} /><Route path="/quality" component={Quality} /><Route path="/contact" component={Contact} /><Route component={NotFound} /></Switch>; }
 export default function App() { return <ErrorBoundary><ThemeProvider defaultTheme="light"><TooltipProvider><Toaster /><Router /></TooltipProvider></ThemeProvider></ErrorBoundary>; }

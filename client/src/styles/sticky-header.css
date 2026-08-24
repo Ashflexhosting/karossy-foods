@@ -1,0 +1,6 @@
+/* Meridian Pantry persistent header: the brand lockup and route navigation retain reliable contrast across every scroll position. */
+.site-header { position:fixed; z-index:60; top:0; right:0; left:0; background:rgba(245,241,232,.96); box-shadow:0 8px 28px rgba(21,61,53,.1); backdrop-filter:blur(16px); }
+.site-header-inverse { background:rgba(21,61,53,.96); border-bottom-color:rgba(255,255,255,.16); box-shadow:0 8px 28px rgba(3,24,20,.2); }
+.site-header .header-inner { min-height:72px; }.site-header-inverse .header-inner { min-height:72px; }
+.site-header .mobile-menu { position:fixed; top:72px; right:0; left:0; box-shadow:0 16px 28px rgba(3,24,20,.26); }
+@media (max-width:680px) { .site-header .header-inner,.site-header-inverse .header-inner { min-height:62px; }.site-header .mobile-menu { top:62px; } }

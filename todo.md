@@ -231,3 +231,9 @@
 - [x] Remove the preview popup and restore direct campaign selection behavior.
 - [x] Make each campaign option switch its background, copy, and action immediately on click.
 - [x] Verify the immediate campaign switcher across desktop and mobile, then save a checkpoint.
+
+# New Harvest Homepage Hero Checklist
+
+- [x] Review the New harvest artwork focal point against the homepage headline area.
+- [x] Apply the New harvest selection artwork as the homepage hero background.
+- [x] Verify headline contrast and responsive framing, then save a checkpoint.

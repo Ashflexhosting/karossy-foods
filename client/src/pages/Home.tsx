@@ -10,7 +10,7 @@ import "@/styles/home-route-system.css";
 import "@/styles/home-motion-system.css";
 import "@/styles/seasonal-banners.css";
 
-const heroImage = "/manus-storage/karossy-abstract-agricultural-hero_81641ab5.jpg";
+const heroImage = "/manus-storage/karossy-abstract-harvest-campaign_585d618a.jpg";
 const mangoImage = "/manus-storage/karossy-products-mango_c6a8de61.jpg";
 const traceImage = "/manus-storage/karossy-traceability_25ffa369.jpg";
 

@@ -66,3 +66,9 @@
 - [x] Assign matching icons to each mobile navigation item: home, company, products, gallery, export route, and quality.
 - [x] Replace numbered dropdown markers with the assigned icons.
 - [x] Verify the mobile dropdown, then save a checkpoint.
+
+# Enquiry Conversion & Navigation Checklist
+
+- [x] Define the quote modal fields, completion behavior, desktop hover labels, and mobile contact content.
+- [x] Implement the quote pop-up form, navigation hover labels, and mobile quick-contact panel.
+- [x] Verify the refined export-brief conversion and navigation interactions at desktop and mobile sizes, then save a checkpoint.

@@ -2,25 +2,27 @@
  * Meridian Pantry design system: Canopy Green, harvest saffron, and a visible route-spine
  * create the premium Nigerian food-export identity used across Karossy Foods pages.
  */
-import { ArrowUpRight, Building2, House, Images, Menu, Package, ShieldCheck, Ship, X } from "lucide-react";
+import { ArrowUpRight, Building2, CheckCircle2, House, Images, Mail, Menu, Package, Phone, ShieldCheck, Ship, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import type { ReactNode } from "react";
 import "@/styles/shared-logo.css";
 import "@/styles/sticky-header.css";
 import "@/styles/mobile-nav-icons.css";
+import "@/styles/quote-dialog.css";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";
 const logo = "/manus-storage/karossy-foods-logo_dbfe97cf.png";
 const monogram = "/manus-storage/karossy-favicon-leaf-s_84ebb102.png";
 
 const navItems = [
-  { label: "Home", href: "/", icon: House },
-  { label: "About Us", href: "/about", icon: Building2 },
-  { label: "Our Products", href: "/products", icon: Package },
-  { label: "Gallery", href: "/gallery", icon: Images },
-  { label: "Export & Wholesale", href: "/export", icon: Ship },
-  { label: "Quality & Sourcing", href: "/quality", icon: ShieldCheck },
+  { label: "Home", href: "/", icon: House, hint: "Return to the source" },
+  { label: "About Us", href: "/about", icon: Building2, hint: "Meet Karossy Foods" },
+  { label: "Our Products", href: "/products", icon: Package, hint: "Explore our food range" },
+  { label: "Gallery", href: "/gallery", icon: Images, hint: "See products & sourcing" },
+  { label: "Export & Wholesale", href: "/export", icon: Ship, hint: "Plan your supply route" },
+  { label: "Quality & Sourcing", href: "/quality", icon: ShieldCheck, hint: "Our sourcing approach" },
 ];
 
 export function BrandMark({ light = false }: { light?: boolean }) {
@@ -30,15 +32,35 @@ export function BrandMark({ light = false }: { light?: boolean }) {
 export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
   const [location] = useLocation();
   const [open, setOpen] = useState(false);
+  const [quoteOpen, setQuoteOpen] = useState(false);
+  const [quoteSent, setQuoteSent] = useState(false);
   useEffect(() => setOpen(false), [location]);
+  const updateQuoteState = (value: boolean) => { setQuoteOpen(value); if (!value) setQuoteSent(false); };
+  const handleQuoteSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const name = String(form.get("name") || "");
+    const company = String(form.get("company") || "");
+    const email = String(form.get("email") || "");
+    const phone = String(form.get("phone") || "");
+    const product = String(form.get("product") || "");
+    const destination = String(form.get("destination") || "");
+    const quantity = String(form.get("quantity") || "");
+    const requirements = String(form.get("requirements") || "");
+    const subject = encodeURIComponent(`Karossy Foods quote request — ${product || "New enquiry"}`);
+    const body = encodeURIComponent(`Name: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone / WhatsApp: ${phone}\nProduct required: ${product}\nDestination market: ${destination}\nEstimated quantity: ${quantity}\nRequirements:\n${requirements}`);
+    window.location.href = `mailto:info@karossyfoods.com?subject=${subject}&body=${body}`;
+    setQuoteSent(true);
+  };
   return <header className={inverse ? "site-header site-header-inverse" : "site-header"}>
     <div className="site-shell header-inner">
       <Link href="/" className="brand-link"><BrandMark light={inverse} /></Link>
-      <nav className="desktop-nav" aria-label="Main navigation">{navItems.map((item) => <Link key={item.href} href={item.href} className={location === item.href || (item.href === "/about" && location === "/origin") ? "nav-link nav-link-active" : "nav-link"}>{item.label}</Link>)}</nav>
-      <Link href="/contact" className={inverse ? "header-cta header-cta-inverse" : "header-cta"}>Request a quote <ArrowUpRight size={15} strokeWidth={2.2} /></Link>
+      <nav className="desktop-nav" aria-label="Main navigation">{navItems.map((item) => <Link key={item.href} href={item.href} data-nav-hint={item.hint} className={location === item.href || (item.href === "/about" && location === "/origin") ? "nav-link nav-link-active" : "nav-link"}>{item.label}</Link>)}</nav>
+      <button type="button" onClick={() => updateQuoteState(true)} className={inverse ? "header-cta header-cta-inverse" : "header-cta"}>Request a quote <ArrowUpRight size={15} strokeWidth={2.2} /></button>
       <button type="button" className="mobile-menu-toggle" onClick={() => setOpen((value) => !value)} aria-expanded={open} aria-label={open ? "Close navigation" : "Open navigation"}>{open ? <X size={23} /> : <Menu size={23} />}</button>
     </div>
-    {open && <div className="mobile-menu"><div className="site-shell mobile-menu-inner">{navItems.map((item, index) => { const Icon = item.icon; return <Link key={item.href} href={item.href} className={location === item.href ? "mobile-nav-link mobile-nav-active" : "mobile-nav-link"} style={{ transitionDelay: `${index * 45}ms` }}><span className="mobile-nav-icon"><Icon size={17} strokeWidth={1.9} /></span>{item.label}</Link>; })}<Link href="/contact" className="button button-saffron mobile-enquiry">Request a wholesale quote <ArrowUpRight size={17} /></Link></div></div>}
+    {open && <div className="mobile-menu"><div className="site-shell mobile-menu-inner">{navItems.map((item, index) => { const Icon = item.icon; return <Link key={item.href} href={item.href} className={location === item.href ? "mobile-nav-link mobile-nav-active" : "mobile-nav-link"} style={{ transitionDelay: `${index * 45}ms` }}><span className="mobile-nav-icon"><Icon size={17} strokeWidth={1.9} /></span>{item.label}</Link>; })}<button type="button" onClick={() => { setOpen(false); updateQuoteState(true); }} className="button button-saffron mobile-enquiry">Request a wholesale quote <ArrowUpRight size={17} /></button><div className="mobile-quick-contact"><span>Quick contact</span><a href="mailto:info@karossyfoods.com"><Mail size={15} />info@karossyfoods.com</a><a href="tel:+2348036481214"><Phone size={15} />+234 803 648 1214</a></div></div></div>}
+    <Dialog open={quoteOpen} onOpenChange={updateQuoteState}><DialogContent className="quote-dialog-shell"><DialogHeader><div className="quote-dialog-route"><img src={monogram} alt="" /><span>Karossy export desk</span><i>Crop → quantity → destination</i></div><DialogTitle>{quoteSent ? "Your enquiry is ready to send." : "Start your export brief."}</DialogTitle><DialogDescription>{quoteSent ? "Your email application should now be open with the details you provided. If it did not open, email us directly at info@karossyfoods.com." : "Share the crop or product, quantity and destination. We will review suitable supply options for your brief."}</DialogDescription></DialogHeader>{quoteSent ? <div className="quote-success"><CheckCircle2 size={23} /><p>Thank you. Your sourcing brief is prepared for the Karossy Foods export desk.</p><button type="button" className="button button-forest" onClick={() => updateQuoteState(false)}>Close</button></div> : <form className="quote-form" onSubmit={handleQuoteSubmit}><div className="quote-form-row"><label>Full name<input required name="name" placeholder="Your name" /></label><label>Company name<input name="company" placeholder="Company name" /></label></div><div className="quote-form-row"><label>Work email<input required type="email" name="email" placeholder="you@company.com" /></label><label>Phone / WhatsApp<input name="phone" placeholder="Contact number" /></label></div><div className="quote-form-row"><label>Crop / product required<input required name="product" placeholder="For example: Ijebu Garri" /></label><label>Destination market<input required name="destination" placeholder="Country or market" /></label></div><label>Estimated quantity<input name="quantity" placeholder="Expected quantity" /></label><label>Your supply brief<textarea required name="requirements" rows={4} placeholder="Tell us about your pack, timing and supply requirements." /></label><button type="submit" className="button button-saffron">Prepare export brief <ArrowUpRight size={17} /></button><p className="quote-form-note">Submitting opens your email application with the quote details. No information is stored by this website.</p></form>}</DialogContent></Dialog>
   </header>;
 }
 

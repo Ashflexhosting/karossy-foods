@@ -74,3 +74,5 @@
 - The leaf-and-S monogram is the primary route seal beside the supplied wordmark, and homepage stages are visibly marked from origin through handover to make the sourcing journey explicit.
 
 - The Gallery is a **visual sourcing journal**, not a generic image grid: uneven editorial apertures, product-route captions and a final supply handover keep every image connected to an origin and buyer conversation.
+
+- Enquiry moments are treated as **Karossy export briefs**: crop, quantity, destination and timing form the visible handover language, while the botanical route seal appears wherever a buyer begins their sourcing conversation.

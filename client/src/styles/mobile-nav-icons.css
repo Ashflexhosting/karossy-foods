@@ -1,4 +1,5 @@
 /* Meridian Pantry mobile navigation: route-aligned icons replace numerical markers with clear visual wayfinding. */
+.mobile-nav-link { display:flex; align-items:center; justify-content:flex-start; }
 .mobile-nav-link .mobile-nav-icon { display:grid; flex:0 0 31px; width:31px; height:31px; place-items:center; margin-right:13px; border:1px solid rgba(243,167,45,.55); border-radius:50%; color:#f3a72d; font-size:inherit; letter-spacing:0; vertical-align:middle; transition:background .18s var(--ease-out),color .18s,transform .18s var(--ease-out); }
 .mobile-nav-link:hover .mobile-nav-icon,.mobile-nav-active .mobile-nav-icon { color:#153d35; background:#f3a72d; transform:rotate(-8deg); }
 .mobile-nav-link .mobile-nav-icon svg { display:block; }

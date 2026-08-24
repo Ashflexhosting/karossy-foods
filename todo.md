@@ -72,3 +72,8 @@
 - [x] Define the quote modal fields, completion behavior, desktop hover labels, and mobile contact content.
 - [x] Implement the quote pop-up form, navigation hover labels, and mobile quick-contact panel.
 - [x] Verify the refined export-brief conversion and navigation interactions at desktop and mobile sizes, then save a checkpoint.
+
+# Mobile Icon Alignment Checklist
+
+- [x] Align each mobile navigation icon horizontally beside its label.
+- [x] Verify the corrected mobile menu, then save a checkpoint.

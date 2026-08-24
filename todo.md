@@ -316,6 +316,12 @@
 - [x] Apply the green header background with readable desktop and mobile navigation contrast across inner pages.
 - [x] Verify homepage preservation and inner-page headers at desktop and mobile dimensions, then save a checkpoint.
 
+# Inner-Page Header Route Label Checklist
+
+- [x] Map inner-page paths to clear, buyer-facing header route labels.
+- [x] Add a subtle responsive route label to non-homepage headers while keeping the homepage unchanged.
+- [x] Verify route-label accuracy and header balance on desktop and mobile, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

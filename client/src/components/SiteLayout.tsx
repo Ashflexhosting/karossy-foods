@@ -17,6 +17,7 @@ import "@/styles/inner-page-banners.css";
 import "@/styles/production-template-refinement.css";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { contactDetails, whatsappEnquiryUrl } from "@/lib/contactDetails";
+import { productCategories } from "@/lib/productCatalogue";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";
 const logo = "/manus-storage/karossy-foods-logo_dbfe97cf.png";
@@ -45,6 +46,11 @@ export function Breadcrumbs({ items, inverse = false }: { items: BreadcrumbItem[
 export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
   const [location] = useLocation();
   const innerPage = location !== "/";
+  const currentRouteLabel = location.startsWith("/products/")
+    ? productCategories.find((category) => category.slug === location.split("/")[2])?.name ?? "Product detail"
+    : location === "/origin"
+      ? "About us"
+      : navItems.find((item) => item.href === location)?.label ?? "Karossy Foods";
   const [open, setOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [quoteSent, setQuoteSent] = useState(false);
@@ -88,6 +94,7 @@ export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
   return <header className={`${inverse ? "site-header site-header-inverse" : "site-header"}${innerPage ? " site-header-inner-green" : ""}${scrolled ? " site-header-scrolled" : ""}`}>
     <div className="site-shell header-inner">
       <Link href="/" className="brand-link"><BrandMark light={inverse || innerPage} /></Link>
+      {innerPage && <span className="header-route-label"><i aria-hidden="true" />{currentRouteLabel}</span>}
       <nav className="desktop-nav" aria-label="Main navigation">{navItems.map((item) => <Link key={item.href} href={item.href} data-nav-hint={item.hint} className={isActive(item.href) ? "nav-link nav-link-active" : "nav-link"}>{item.label}</Link>)}</nav>
       <button type="button" onClick={() => { setQuoteProduct(""); updateQuoteState(true); }} className={inverse || innerPage ? "header-cta header-cta-inverse" : "header-cta"}>Request a quote <ArrowUpRight size={15} strokeWidth={2.2} /></button>
       <button type="button" className="mobile-menu-toggle" onClick={() => setOpen((value) => !value)} aria-expanded={open} aria-label={open ? "Close navigation" : "Open navigation"}>{open ? <X size={23} /> : <Menu size={23} />}</button>

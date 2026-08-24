@@ -249,3 +249,9 @@
 - [x] Inspect shared route handling and product-card navigation scroll behavior.
 - [x] Reset scroll position to the page top when a product detail route opens.
 - [x] Verify product-card navigation from the catalogue opens the corresponding detail route at the page top, then save a checkpoint.
+
+# Shared Route Feedback & Product Navigation Checklist
+
+- [x] Review shared application routing and product detail layout for scroll, transition, and back-to-top enhancements.
+- [x] Add global route scroll resets, a subtle route-transition indicator, and a floating product-page back-to-top control.
+- [x] Verify desktop and mobile route changes and long product-page navigation, then save a checkpoint.

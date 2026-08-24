@@ -78,3 +78,9 @@
 - Enquiry moments are treated as **Karossy export briefs**: crop, quantity, destination and timing form the visible handover language, while the botanical route seal appears wherever a buyer begins their sourcing conversation.
 
 - The production-template layer uses the leaf-and-S monogram as a restrained Canopy Green and saffron route seal beside the supplied wordmark. Copy prioritises a concrete buyer action, product, season, or destination over generic category claims.
+
+- Every major route-led section now communicates a named sourcing stage through an explicit side spine, waypoint treatment, and stage microcopy rather than using the meridian line as decoration alone.
+
+- Homepage category discovery uses warm, high-saturation crop imagery, varied vertical offsets, and market-selection micro-labels to create a sourcing-journal rhythm instead of an equal-card corporate grid.
+
+- About-page values form an asymmetric **buyer promise sequence**: authenticity, quality, integrity, reliability, customer focus, and growth read as connected handover stages, with the botanical mark language retained at key decision points.

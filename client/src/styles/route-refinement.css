@@ -1,14 +1,24 @@
 /* Meridian Pantry refinement: tactile discovery imagery and traceable route cues extend into the home and contact journeys. */
 .products-section { position: relative; overflow: hidden; }
+/* Meridian Pantry refinement: every stage follows a visible sourcing route, while product imagery remains tactile, abundant and buyer-led. */
+.home-route-stage::before { border-left-style:dashed; border-left-width:1px; box-shadow:0 0 0 1px rgba(243,167,45,.06); }
+.home-route-stage .route-kicker>span { position:relative; width:31px; background:#f3a72d; }
+.home-route-stage .route-kicker>span::after { content:""; position:absolute; right:-2px; top:50%; width:5px; height:5px; border:1px solid #f5f1e8; border-radius:50%; background:#153d35; transform:translateY(-50%); }
+.home-route-stage-dark .route-kicker>span::after { border-color:#153d35; background:#f3a72d; }
 .product-rail { position: relative; }
 .product-rail::before { content: ""; position: absolute; z-index: 3; top: 17px; left: 25px; right: 25px; border-top: 1px dashed rgba(243,167,45,.72); pointer-events: none; }
 .product-tile { isolation: isolate; color: #fff !important; background: #153d35 !important; }
-.product-tile-image { position: absolute; z-index: -2; inset: 0; background-position: center; background-size: cover; filter: saturate(.88) contrast(1.04); }
-.product-tile::before { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(8,37,30,.22) 0%, rgba(8,37,30,.22) 36%, rgba(8,37,30,.92) 100%); }
+.product-tile-image { position: absolute; z-index: -2; inset: 0; background-position: center; background-size: cover; filter:saturate(1.12) contrast(1.03) brightness(1.05); }
+.product-tile::before { content: ""; position: absolute; z-index: -1; inset: 0; background:linear-gradient(180deg,rgba(8,37,30,.08) 0%,rgba(8,37,30,.17) 36%,rgba(8,37,30,.88) 100%); }
 .product-tile::after { z-index: 0; opacity: .38; }
 .tile-index,.tile-content { position: relative; z-index: 2; }
 .tile-content h3 { color: #fff; text-shadow: 0 1px 9px rgba(0,0,0,.18); }
 .tile-content p { color: rgba(255,255,255,.88); opacity: 1; }
+.tile-stage { display:block; margin-bottom:10px; color:#f3a72d; font-size:9px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+.product-rail-expanded .product-tile:nth-child(3n + 2) { transform:translateY(28px); }.product-rail-expanded .product-tile:nth-child(3n + 2):hover { transform:translateY(21px); }
+.product-rail-expanded .product-tile:nth-child(3n + 3) { margin-top:-18px; }.product-rail-expanded .product-tile:nth-child(3n + 3):hover { transform:translateY(-25px); }
+
+.principles-section.home-route-stage { overflow:visible; }.principles-section .route-kicker::after { content:""; position:absolute; top:50%; left:-58px; width:29px; border-top:1px solid #f3a72d; }.principles-grid-six { grid-template-areas:"auth quality integrity" "auth reliability focus" "growth growth focus"; gap:0; border:1px solid rgba(21,61,53,.2); background:#f5f1e8; }.principles-grid-six .principle { min-height:220px; border:0; border-right:1px solid rgba(21,61,53,.2); border-bottom:1px solid rgba(21,61,53,.2); background:rgba(245,241,232,.56); }.principles-grid-six .principle:nth-child(1) { grid-area:auth; min-height:0; background:#153d35; color:#fff; }.principles-grid-six .principle:nth-child(2) { grid-area:quality; }.principles-grid-six .principle:nth-child(3) { grid-area:integrity; border-right:0; }.principles-grid-six .principle:nth-child(4) { grid-area:reliability; border-bottom:0; }.principles-grid-six .principle:nth-child(5) { grid-area:focus; min-height:0; border-right:0; border-bottom:0; background:#eee7d9; }.principles-grid-six .principle:nth-child(6) { grid-area:growth; border-bottom:0; }.principle-stage { display:block; margin:0 32px 44px 0; color:#a77632; font-size:9px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }.principles-grid-six .principle:first-child .principle-stage,.principles-grid-six .principle:first-child .principle-no,.principles-grid-six .principle:first-child p { color:rgba(255,255,255,.72); }.principles-grid-six .principle:first-child svg { color:#f3a72d; }.principles-grid-six .principle h3 { margin-top:0; }
 .tile-arrow { background: rgba(21,61,53,.38); }
 
 .contact-top::before { content: ""; position: absolute; z-index: 0; top: 115px; bottom: 0; left: 9%; width: 1px; border-left: 1px dashed rgba(243,167,45,.58); }
@@ -19,4 +29,5 @@
 .contact-main::before { content: ""; position: absolute; top: 0; left: 8%; height: 95px; border-left: 1px dashed rgba(21,61,53,.35); }
 
 @media (max-width: 900px) { .contact-top::after { top: 83px; right: 0; bottom: 0; width: 48vw; height: auto; }.contact-top::before { left: 5%; }.contact-main::before { left: 5%; } }
-@media (max-width: 680px) { .product-rail::before { left: 18px; right: 18px; }.contact-top::after { display: none; }.contact-top::before { top: 95px; left: 12px; }.contact-main::before { left: 12px; height: 55px; }.contact-head::after { font-size: 8px; margin-top: 18px; } }
+@media (max-width:900px) { .product-rail-expanded .product-tile:nth-child(3n + 2) { transform:none; }.product-rail-expanded .product-tile:nth-child(3n + 2):hover { transform:translateY(-7px); }.product-rail-expanded .product-tile:nth-child(3n + 3) { margin-top:0; }.product-rail-expanded .product-tile:nth-child(3n + 3):hover { transform:translateY(-7px); } }
+@media (max-width: 680px) { .product-rail::before { left: 18px; right: 18px; }.home-route-stage .route-kicker>span::after,.principles-section .route-kicker::after { display:none; }.principles-grid-six { grid-template-areas:none; gap:0; }.principles-grid-six .principle,.principles-grid-six .principle:nth-child(n) { grid-area:auto; min-height:0; border-right:0; border-bottom:1px solid rgba(21,61,53,.2); background:rgba(245,241,232,.56); }.principles-grid-six .principle:first-child { background:#153d35; }.principles-grid-six .principle:last-child { border-bottom:0; }.principle-stage { margin-bottom:24px; }.contact-top::after { display: none; }.contact-top::before { top: 95px; left: 12px; }.contact-main::before { left: 12px; height: 55px; }.contact-head::after { font-size: 8px; margin-top: 18px; } }

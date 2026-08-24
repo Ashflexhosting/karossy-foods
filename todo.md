@@ -375,6 +375,12 @@
 - [x] Use the newly supplied transparent green-and-gold mark as the approved favicon source.
 - [x] Confirm the website favicon reference resolves to the supplied transparent asset.
 
+# Social Sharing and Device Icon Checklist
+
+- [x] Review existing page metadata and identify the required social and device icon references.
+- [x] Create a 32px favicon variant and an Apple touch icon from the new green-and-gold mark.
+- [x] Update social sharing metadata to feature the new mark, verify the references, and save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

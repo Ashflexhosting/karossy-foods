@@ -237,3 +237,9 @@
 - [x] Review the New harvest artwork focal point against the homepage headline area.
 - [x] Apply the New harvest selection artwork as the homepage hero background.
 - [x] Verify headline contrast and responsive framing, then save a checkpoint.
+
+# Dried & Packaged Nigerian Snail Checklist
+
+- [x] Review the shared product data model and define buyer-safe dried and packaged Nigerian snail copy.
+- [x] Add the snail product category to the catalogue, product route, and homepage product selection.
+- [x] Verify the expanded product catalogue at desktop and mobile sizes, then save a checkpoint.

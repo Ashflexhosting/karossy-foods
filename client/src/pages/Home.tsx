@@ -19,8 +19,9 @@ const productCategories = [
   { no: "02", name: "Palm oil & condiments", copy: "Nigerian palm oil and traditional cooking ingredients.", tint: "product-botanical", image: "/manus-storage/karossy-palm-oil-condiments_ec23c1b7.jpg" },
   { no: "03", name: "Garri & cassava", copy: "Ijebu Garri and other cassava-based staples.", tint: "product-grain", image: "/manus-storage/karossy-garri-cassava_e23232ee.jpg" },
   { no: "04", name: "Dried fish & seafood", copy: "Selected dried fish products for African food markets.", tint: "product-botanical", image: "/manus-storage/karossy-dried-fish-seafood_77f4d1c2.jpg" },
-  { no: "05", name: "Nuts & seeds", copy: "African nuts and seeds for retail and wholesale buyers.", tint: "product-grain", image: "/manus-storage/karossy-nuts-seeds_f8b3f1be.jpg" },
-  { no: "06", name: "Traditional ingredients", copy: "Authentic ingredients used in Nigerian and African cooking.", tint: "product-mango", image: "/manus-storage/karossy-spices-traditional-ingredients_3d54b592.jpg" },
+  { no: "05", name: "Dried & packaged Nigerian snails", copy: "Dried and packaged snails from Nigeria for African food retail, wholesale and specialist buyer enquiries.", tint: "product-mango", image: "/manus-storage/dried-snail_72b85033.jpg" },
+  { no: "06", name: "Nuts & seeds", copy: "African nuts and seeds for retail and wholesale buyers.", tint: "product-grain", image: "/manus-storage/karossy-nuts-seeds_f8b3f1be.jpg" },
+  { no: "07", name: "Traditional ingredients", copy: "Authentic ingredients used in Nigerian and African cooking.", tint: "product-mango", image: "/manus-storage/karossy-spices-traditional-ingredients_3d54b592.jpg" },
 ];
 
 const productFocuses = [

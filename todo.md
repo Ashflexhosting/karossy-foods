@@ -194,3 +194,9 @@
 - [x] Replace the blank map frame with a reliable office-location and directions treatment.
 - [x] Align the Lagos office heading, address, directions action, and location panel across desktop and mobile.
 - [x] Verify the corrected office-location section, then save a checkpoint.
+
+# Contact Banner Background Review Checklist
+
+- [x] Inspect the Contact banner background image, focal point, and overlay contrast at desktop and mobile sizes.
+- [x] Refine the banner background treatment to improve visual balance and clarity.
+- [x] Verify the corrected Contact banner, then save a checkpoint.

@@ -285,3 +285,9 @@
 - [x] Select a real existing sourcing image that reinforces the homepage About Karossy Foods message.
 - [x] Add the image as an editorial left-side composition with accessible alternative text.
 - [x] Verify the homepage About section at desktop and mobile dimensions, then save a checkpoint.
+
+# Homepage Hero Black Overlay Checklist
+
+- [x] Review the existing hero wash and define a black overlay that maintains readability and image presence.
+- [x] Apply the black overlay across desktop and mobile hero treatments.
+- [x] Verify the updated hero at desktop and mobile dimensions, then save a checkpoint.

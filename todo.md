@@ -200,3 +200,9 @@
 - [x] Inspect the Contact banner background image, focal point, and overlay contrast at desktop and mobile sizes.
 - [x] Refine the banner background treatment to improve visual balance and clarity.
 - [x] Verify the corrected Contact banner, then save a checkpoint.
+
+# Abstract Agricultural Homepage Hero Checklist
+
+- [x] Create a high-quality abstract agricultural hero image tailored to Karossy Foods.
+- [x] Apply the abstract agricultural image with a contrast-safe homepage hero treatment.
+- [x] Verify the revised homepage hero at desktop and mobile sizes, then save a checkpoint.

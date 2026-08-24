@@ -11,12 +11,12 @@ const mangoImage = "/manus-storage/karossy-products-mango_c6a8de61.jpg";
 const traceImage = "/manus-storage/karossy-traceability_25ffa369.jpg";
 
 const productCategories = [
-  { no: "01", name: "Kilishi & dried meat", copy: "Traditional Nigerian dried meat products and African meat snacks.", tint: "product-mango" },
-  { no: "02", name: "Palm oil & condiments", copy: "Nigerian palm oil and traditional cooking ingredients.", tint: "product-botanical" },
-  { no: "03", name: "Garri & cassava", copy: "Ijebu Garri and other cassava-based staples.", tint: "product-grain" },
-  { no: "04", name: "Dried fish & seafood", copy: "Selected dried fish products for African food markets.", tint: "product-botanical" },
-  { no: "05", name: "Nuts & seeds", copy: "African nuts and seeds for retail and wholesale buyers.", tint: "product-grain" },
-  { no: "06", name: "Traditional ingredients", copy: "Authentic ingredients used in Nigerian and African cooking.", tint: "product-mango" },
+  { no: "01", name: "Kilishi & dried meat", copy: "Traditional Nigerian dried meat products and African meat snacks.", tint: "product-mango", image: "/manus-storage/karossy-kilishi-dried-meat_72d30bf1.jpg" },
+  { no: "02", name: "Palm oil & condiments", copy: "Nigerian palm oil and traditional cooking ingredients.", tint: "product-botanical", image: "/manus-storage/karossy-palm-oil-condiments_ec23c1b7.jpg" },
+  { no: "03", name: "Garri & cassava", copy: "Ijebu Garri and other cassava-based staples.", tint: "product-grain", image: "/manus-storage/karossy-garri-cassava_e23232ee.jpg" },
+  { no: "04", name: "Dried fish & seafood", copy: "Selected dried fish products for African food markets.", tint: "product-botanical", image: "/manus-storage/karossy-dried-fish-seafood_77f4d1c2.jpg" },
+  { no: "05", name: "Nuts & seeds", copy: "African nuts and seeds for retail and wholesale buyers.", tint: "product-grain", image: "/manus-storage/karossy-nuts-seeds_f8b3f1be.jpg" },
+  { no: "06", name: "Traditional ingredients", copy: "Authentic ingredients used in Nigerian and African cooking.", tint: "product-mango", image: "/manus-storage/karossy-spices-traditional-ingredients_3d54b592.jpg" },
 ];
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
 
     <section className="intro-section section-pad"><div className="site-shell intro-grid"><div className="route-kicker"><span /> About Karossy Foods</div><div className="intro-copy"><h2>Connecting the World to Authentic African Foods</h2><p>Karossy Foods Limited is a Nigerian food sourcing, distribution and export company focused on bringing authentic African food products to customers and businesses around the world.</p><p>From traditional staples such as Ijebu Garri and palm oil to dried meats, fish, nuts, seeds and other African ingredients, our goal is simple: to make authentic African foods accessible wherever our customers are in the world.</p><Link href="/about" className="text-button">Learn more about Karossy Foods <ArrowUpRight size={17} /></Link></div></div></section>
 
-    <section className="products-section section-pad"><div className="site-shell section-head"><div><div className="route-kicker"><span /> Our products</div><h2>Rooted in flavour.<br /><em>Ready for supply.</em></h2></div><Link href="/products" className="button button-forest">Explore all products <ArrowUpRight size={17} /></Link></div><div className="site-shell product-rail product-rail-expanded">{productCategories.map((product) => <Link href="/products" className={`product-tile ${product.tint}`} key={product.no}><span className="tile-index">{product.no}</span><div className="tile-content"><h3>{product.name}</h3><p>{product.copy}</p><span className="tile-arrow"><ArrowUpRight size={20} /></span></div></Link>)}</div></section>
+    <section className="products-section section-pad"><div className="site-shell section-head"><div><div className="route-kicker"><span /> Our products</div><h2>Rooted in flavour.<br /><em>Ready for supply.</em></h2></div><Link href="/products" className="button button-forest">Explore all products <ArrowUpRight size={17} /></Link></div><div className="site-shell product-rail product-rail-expanded">{productCategories.map((product) => <Link href="/products" className={`product-tile ${product.tint}`} key={product.no}><div className="product-tile-image" style={{ backgroundImage: `url(${product.image})` }} aria-hidden="true" /><span className="tile-index">{product.no}</span><div className="tile-content"><h3>{product.name}</h3><p>{product.copy}</p><span className="tile-arrow"><ArrowUpRight size={20} /></span></div></Link>)}</div></section>
 
     <section className="season-section"><div className="site-shell season-grid"><div className="season-image-frame"><img src={mangoImage} alt="Fresh golden mangoes available through Nigerian food supply programmes" /><div className="image-tag"><span>From Nigeria</span><strong>Premium produce</strong></div></div><div className="season-copy"><div className="route-kicker route-kicker-light"><span /> Wholesale & retail</div><h2>Your trusted partner for African food supply.</h2><p>Whether you are a supermarket, African food retailer, restaurant, distributor, importer or wholesale buyer, Karossy Foods helps you source authentic Nigerian and African food products.</p><Link href="/export" className="text-button text-button-light">Explore export & wholesale <ArrowUpRight size={17} /></Link></div></div></section>
 

@@ -22,3 +22,9 @@
 - [x] Define larger category card proportions and a more spacious commercial-detail hierarchy.
 - [x] Implement the expanded visual and specification layout for all dossier cards.
 - [x] Verify the expanded dossiers at desktop and mobile dimensions, then save a checkpoint.
+
+# Readability Enhancement Checklist
+
+- [x] Define a larger, responsive supporting-text scale that preserves the editorial hierarchy.
+- [x] Apply the revised body and support text scale across the public pages.
+- [x] Verify desktop and mobile readability, then save a checkpoint.

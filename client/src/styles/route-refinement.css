@@ -1,0 +1,22 @@
+/* Meridian Pantry refinement: tactile discovery imagery and traceable route cues extend into the home and contact journeys. */
+.products-section { position: relative; overflow: hidden; }
+.product-rail { position: relative; }
+.product-rail::before { content: ""; position: absolute; z-index: 3; top: 17px; left: 25px; right: 25px; border-top: 1px dashed rgba(243,167,45,.72); pointer-events: none; }
+.product-tile { isolation: isolate; color: #fff !important; background: #153d35 !important; }
+.product-tile-image { position: absolute; z-index: -2; inset: 0; background-position: center; background-size: cover; filter: saturate(.88) contrast(1.04); }
+.product-tile::before { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(8,37,30,.22) 0%, rgba(8,37,30,.22) 36%, rgba(8,37,30,.92) 100%); }
+.product-tile::after { z-index: 0; opacity: .38; }
+.tile-index,.tile-content { position: relative; z-index: 2; }
+.tile-content h3 { color: #fff; text-shadow: 0 1px 9px rgba(0,0,0,.18); }
+.tile-content p { color: rgba(255,255,255,.88); opacity: 1; }
+.tile-arrow { background: rgba(21,61,53,.38); }
+
+.contact-top::before { content: ""; position: absolute; z-index: 0; top: 115px; bottom: 0; left: 9%; width: 1px; border-left: 1px dashed rgba(243,167,45,.58); }
+.contact-top::after { content: ""; position: absolute; z-index: 0; top: 125px; right: 8%; width: min(30vw, 430px); height: 240px; background: linear-gradient(90deg, rgba(21,61,53,.96) 0%, rgba(21,61,53,.12) 70%), url("/manus-storage/karossy-spices-traditional-ingredients_3d54b592.jpg") center/cover; clip-path: polygon(13% 0,100% 0,100% 85%,0 100%,0 13%); opacity: .9; }
+.contact-head { position: relative; z-index: 1; }
+.contact-head::after { content: "crop → quantity → destination"; display: inline-flex; align-items: center; margin-top: 25px; padding: 8px 11px; border: 1px solid rgba(243,167,45,.58); color: #f3a72d; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.contact-main { position: relative; }
+.contact-main::before { content: ""; position: absolute; top: 0; left: 8%; height: 95px; border-left: 1px dashed rgba(21,61,53,.35); }
+
+@media (max-width: 900px) { .contact-top::after { width: 34vw; right: 4%; top: 170px; height: 210px; }.contact-top::before { left: 5%; }.contact-main::before { left: 5%; } }
+@media (max-width: 680px) { .product-rail::before { left: 18px; right: 18px; }.contact-top::after { display: none; }.contact-top::before { top: 95px; left: 12px; }.contact-main::before { left: 12px; height: 55px; }.contact-head::after { font-size: 8px; margin-top: 18px; } }

@@ -1,0 +1,112 @@
+/* Meridian Pantry readability scale: enlarge supporting copy without competing with the editorial display hierarchy. */
+body { font-size: 17px; }
+
+.hero-copy > p,
+.intro-copy p,
+.trace-copy > p,
+.origin-copy p,
+.brief-card p,
+.quality-intro p,
+.page-lead p,
+.contact-head > p {
+  font-size: 19px !important;
+  line-height: 1.72 !important;
+}
+
+.season-copy p,
+.route-section p,
+.service-section p,
+.compliance-section p {
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+}
+
+.tile-content p,
+.assortment-heading p,
+.catalog-note p,
+.catalog-note p,
+.category-card-header p,
+.principle p,
+.quality-principles-grid p,
+.export-step p,
+.contact-aside > p {
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+}
+
+.large-quote { font-size: clamp(31px, 3.45vw, 48px) !important; }
+
+.check-list,
+.format-list span,
+.service-list span,
+.buyers-list span,
+.feature-stat span,
+.footer-list,
+.contact-details a,
+.contact-details span {
+  font-size: 15px !important;
+}
+
+.category-dossier-line span,
+.pack-spec-title,
+.pack-spec-group > span,
+.pack-specs dt,
+.pack-specs dd,
+.product-index-visual span,
+.form-shell label,
+.form-privacy,
+.success-note {
+  font-size: 11px !important;
+}
+
+.pack-specs dd { font-size: 12px !important; }
+.pack-specs dt { font-size: 10px !important; }
+
+.form-shell input,
+.form-shell textarea { font-size: 16px !important; }
+.catalog-note { padding: 19px 22px !important; }
+
+@media (max-width: 680px) {
+  body { font-size: 16px; }
+
+  .hero-copy > p,
+  .intro-copy p,
+  .trace-copy > p,
+  .origin-copy p,
+  .brief-card p,
+  .quality-intro p,
+  .page-lead p,
+  .contact-head > p {
+    font-size: 17px !important;
+    line-height: 1.68 !important;
+  }
+
+  .season-copy p,
+  .route-section p,
+  .service-section p,
+  .compliance-section p {
+    font-size: 17px !important;
+  }
+
+  .tile-content p,
+  .assortment-heading p,
+  .catalog-note p,
+  .category-card-header p,
+  .principle p,
+  .quality-principles-grid p,
+  .export-step p,
+  .contact-aside > p {
+    font-size: 14px !important;
+  }
+
+  .check-list,
+  .format-list span,
+  .service-list span,
+  .buyers-list span,
+  .feature-stat span,
+  .footer-list,
+  .contact-details a,
+  .contact-details span {
+    font-size: 14px !important;
+  }
+}

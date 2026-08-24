@@ -64,3 +64,5 @@
 - Product dossiers use a **full-width image-and-brief spread**: oversized category photography, generous editorial title space and two grouped commercial detail panels make each category feel like a considered sourcing opportunity rather than a compact card.
 
 - The full-width dossiers alternate paper, oat and botanical-tinted buyer briefs so their visual sequence feels like a curated sourcing journal instead of a repeated administrative template.
+
+- Home category discovery combines full-bleed ingredient imagery with the product names, while the contact page has a subtle crop-to-destination route cue to ensure every key journey feels traceable and provenance-led.

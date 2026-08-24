@@ -346,6 +346,12 @@
 - [x] Remove duplicated visual-editor inline styles from the homepage product-section markup.
 - [x] Verify the normalized section at desktop and mobile dimensions, then save a checkpoint.
 
+# Export & Wholesale Page Redesign Checklist
+
+- [x] Review the current Export & Wholesale page content, hierarchy, and existing visual components.
+- [x] Redesign the page into a buyer-facing sourcing journey with clearer commercial stages and enquiry paths.
+- [x] Verify desktop and mobile layouts, complete a visual review, and save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

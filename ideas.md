@@ -70,3 +70,5 @@
 - Dedicated category pages are structured as **quote-led sourcing briefs**: each combines a tactile product image, the buyer use case, clear “available on request” commercial fields, and a direct route back to an enquiry action without inventing product-specific claims.
 
 - Detail pages use a four-step **Meridian handover sequence**—buyer brief, commercial brief, category range and export handover—so traceability and buyer movement structure the full page rather than acting as occasional decoration.
+
+- The leaf-and-S monogram is the primary route seal beside the supplied wordmark, and homepage stages are visibly marked from origin through handover to make the sourcing journey explicit.

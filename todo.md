@@ -42,3 +42,15 @@
 
 - [x] Prepare the supplied leaf-and-S favicon asset for web use.
 - [x] Reference the new favicon in the website metadata and verify the build.
+
+# Shared Logo Update Checklist
+
+- [x] Prepare the supplied Karossy Foods wordmark asset for managed website use.
+- [x] Replace the shared header and footer brand mark with the supplied logo.
+- [x] Verify the logo at desktop and mobile sizes, then save a checkpoint.
+
+# Shared Brand Refinement Checklist
+
+- [x] Integrate the leaf-and-S monogram with the supplied Karossy Foods wordmark.
+- [x] Strengthen the Meridian route cues across the homepage journey.
+- [x] Verify shared branding and route cues at desktop and mobile sizes, then save a checkpoint.

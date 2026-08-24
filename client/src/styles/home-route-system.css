@@ -1,0 +1,7 @@
+/* Meridian Pantry homepage: source-to-handover labels turn the page sections into a continuous visual sourcing route. */
+.home-route-stage { position:relative; overflow:hidden; }
+.home-route-stage::before { content:""; position:absolute; top:0; bottom:0; left:max(14px,calc((100vw - 1240px)/2 - 23px)); width:1px; border-left:1px dashed rgba(21,61,53,.34); }
+.home-route-stage::after { content:attr(data-route); position:absolute; top:30px; left:max(20px,calc((100vw - 1240px)/2 - 17px)); color:#a77632; font-size:8px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; writing-mode:vertical-rl; }
+.home-route-stage-dark::before { border-color:rgba(243,167,45,.48); }.home-route-stage-dark::after { color:#f3a72d; }
+.home-route-stage .route-kicker { position:relative; }.home-route-stage .route-kicker::after { content:""; position:absolute; top:50%; left:-58px; width:29px; border-top:1px solid #f3a72d; }
+@media (max-width:680px) { .home-route-stage::before,.home-route-stage::after,.home-route-stage .route-kicker::after { display:none; } }

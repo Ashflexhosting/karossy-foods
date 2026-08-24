@@ -6,8 +6,11 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
+import "@/styles/shared-logo.css";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";
+const logo = "/manus-storage/karossy-foods-logo_dbfe97cf.png";
+const monogram = "/manus-storage/karossy-favicon-leaf-s_84ebb102.png";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -18,7 +21,7 @@ const navItems = [
 ];
 
 export function BrandMark({ light = false }: { light?: boolean }) {
-  return <div className="brand-lockup" aria-label="Karossy Foods Limited"><img src={mark} alt="" className="brand-mark" /><span className={light ? "brand-name brand-name-light" : "brand-name"}>Karossy<span>Foods</span></span></div>;
+  return <div className={light ? "brand-lockup brand-lockup-logo brand-lockup-logo-light" : "brand-lockup brand-lockup-logo"} aria-label="Karossy Foods Limited"><img src={monogram} alt="" className="brand-monogram" /><img src={logo} alt="Karossy Foods" className="brand-logo" /></div>;
 }
 
 export function SiteHeader({ inverse = false }: { inverse?: boolean }) {

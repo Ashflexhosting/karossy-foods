@@ -267,3 +267,9 @@
 - [x] Define a subtle staggered fade-in for the two homepage headline lines with reduced-motion support.
 - [x] Implement the desktop and mobile-safe headline entrance animation.
 - [x] Verify the loading composition and save a checkpoint.
+
+# Homepage Product-Card Row Layout Checklist
+
+- [x] Review the existing homepage product rail and define a balanced two-row desktop arrangement.
+- [x] Implement the two-row product-card layout while retaining responsive tablet and mobile reading order.
+- [x] Verify the homepage product section at desktop, tablet, and mobile dimensions, then save a checkpoint.

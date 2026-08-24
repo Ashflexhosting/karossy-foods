@@ -310,6 +310,12 @@
 - [x] Apply the new background treatment while preserving heading and product-card contrast.
 - [x] Verify the Product Selection section at desktop and mobile dimensions, then save a checkpoint.
 
+# Inner-Page Green Header Checklist
+
+- [x] Review shared header route behavior and define a green treatment for non-homepage routes.
+- [x] Apply the green header background with readable desktop and mobile navigation contrast across inner pages.
+- [x] Verify homepage preservation and inner-page headers at desktop and mobile dimensions, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

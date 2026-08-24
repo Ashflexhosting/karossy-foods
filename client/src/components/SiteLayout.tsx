@@ -44,6 +44,7 @@ export function Breadcrumbs({ items, inverse = false }: { items: BreadcrumbItem[
 
 export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
   const [location] = useLocation();
+  const innerPage = location !== "/";
   const [open, setOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [quoteSent, setQuoteSent] = useState(false);
@@ -84,11 +85,11 @@ export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
     window.location.href = `mailto:${contactDetails.email}?subject=${subject}&body=${body}`;
     setQuoteSent(true);
   };
-  return <header className={`${inverse ? "site-header site-header-inverse" : "site-header"}${scrolled ? " site-header-scrolled" : ""}`}>
+  return <header className={`${inverse ? "site-header site-header-inverse" : "site-header"}${innerPage ? " site-header-inner-green" : ""}${scrolled ? " site-header-scrolled" : ""}`}>
     <div className="site-shell header-inner">
-      <Link href="/" className="brand-link"><BrandMark light={inverse} /></Link>
+      <Link href="/" className="brand-link"><BrandMark light={inverse || innerPage} /></Link>
       <nav className="desktop-nav" aria-label="Main navigation">{navItems.map((item) => <Link key={item.href} href={item.href} data-nav-hint={item.hint} className={isActive(item.href) ? "nav-link nav-link-active" : "nav-link"}>{item.label}</Link>)}</nav>
-      <button type="button" onClick={() => { setQuoteProduct(""); updateQuoteState(true); }} className={inverse ? "header-cta header-cta-inverse" : "header-cta"}>Request a quote <ArrowUpRight size={15} strokeWidth={2.2} /></button>
+      <button type="button" onClick={() => { setQuoteProduct(""); updateQuoteState(true); }} className={inverse || innerPage ? "header-cta header-cta-inverse" : "header-cta"}>Request a quote <ArrowUpRight size={15} strokeWidth={2.2} /></button>
       <button type="button" className="mobile-menu-toggle" onClick={() => setOpen((value) => !value)} aria-expanded={open} aria-label={open ? "Close navigation" : "Open navigation"}>{open ? <X size={23} /> : <Menu size={23} />}</button>
     </div>
     {open && <div className="mobile-menu"><div className="site-shell mobile-menu-inner">{navItems.map((item, index) => { const Icon = item.icon; const active = isActive(item.href); return <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined} className={active ? "mobile-nav-link mobile-nav-active" : "mobile-nav-link"} style={{ transitionDelay: `${index * 45}ms` }}><span className="mobile-nav-icon"><Icon size={17} strokeWidth={1.9} /></span><span className="mobile-nav-label">{item.label}</span></Link>; })}<button type="button" onClick={() => { setOpen(false); setQuoteProduct(""); updateQuoteState(true); }} className="button button-saffron mobile-enquiry">Request a wholesale quote <ArrowUpRight size={17} /></button><div className="mobile-quick-contact"><span>Quick contact</span><a href={`mailto:${contactDetails.email}`}><Mail size={15} />{contactDetails.email}</a><a href={`tel:${contactDetails.primaryPhoneTel}`}><Phone size={15} />{contactDetails.primaryPhone}</a><a href={`tel:${contactDetails.internationalPhoneTel}`}><Phone size={15} />{contactDetails.internationalPhone}</a><a href={whatsappEnquiryUrl("Hello Karossy Foods, I would like to make an enquiry.")} target="_blank" rel="noreferrer"><MessageCircle size={15} />Chat on WhatsApp</a></div></div></div>}

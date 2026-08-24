@@ -170,3 +170,9 @@
 - [x] Review the existing map component and contact-page layout for the new WhatsApp, map, and direct-inquiry requirements.
 - [x] Add the Nigerian WhatsApp greeting link, interactive Lagos office map, and direct-inquiry form beside the address details.
 - [x] Verify the contact-page enhancements at desktop and mobile sizes, then save a checkpoint.
+
+# Office Hours & Global WhatsApp Action Checklist
+
+- [x] Confirm the Lagos office hours: Mondays–Fridays, 8am–6pm; Saturdays, 10am–4pm; Sundays/Public Holidays, closed. Review the shared site layout for the floating WhatsApp action.
+- [x] Add verified working hours below the contact details and a persistent WhatsApp action button across the site.
+- [x] Verify the new contact-accessibility elements at desktop and mobile sizes, then save a checkpoint.

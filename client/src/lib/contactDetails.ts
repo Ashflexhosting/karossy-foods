@@ -6,6 +6,11 @@ export const contactDetails = {
   primaryPhoneTel: "+2348020543007",
   internationalPhone: "+44(759)771-0383",
   internationalPhoneTel: "+447597710383",
+  officeHours: [
+    { days: "Mondays–Fridays", hours: "8am–6pm" },
+    { days: "Saturdays", hours: "10am–4pm" },
+    { days: "Sundays/Public Holidays", hours: "Closed" },
+  ],
 } as const;
 
 export const whatsappEnquiryUrl = (message: string) => `https://wa.me/${contactDetails.primaryPhoneTel.slice(1)}?text=${encodeURIComponent(message)}`;

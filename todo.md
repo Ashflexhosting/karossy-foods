@@ -110,3 +110,14 @@
 - [x] Define route-consistent breadcrumb labels for all inner pages, including category-page parent and current-category states.
 - [x] Add a compact shared breadcrumb to the inner page layouts.
 - [x] Verify breadcrumb behavior at desktop and mobile sizes, then save a checkpoint.
+
+# Inner-Page Banner Imagery Checklist
+
+- [x] Map matching product and sourcing imagery to each inner-page hero banner: origin sourcing for About, abundant ingredients for Products, export produce for Export, botanical detail for Quality, and African pantry selection for Gallery.
+- [x] Apply context-specific image backgrounds with reliable text and breadcrumb contrast.
+- [x] Verify inner-page banners at desktop and mobile sizes, then save a checkpoint.
+
+# Inner-Page Banner Refinement Checklist
+
+- [x] Strengthen banner text contrast and vary image-led hero composition by page context.
+- [x] Add a compact Meridian route seal to each image-led inner-page banner.

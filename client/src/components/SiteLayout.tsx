@@ -5,7 +5,7 @@
 import { ArrowUpRight, Building2, CheckCircle2, ChevronRight, House, Images, Mail, Menu, MessageCircle, Package, Phone, ShieldCheck, Ship, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { useEffect, useState, type FormEvent } from "react";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import "@/styles/shared-logo.css";
 import "@/styles/sticky-header.css";
 import "@/styles/mobile-nav-icons.css";
@@ -13,6 +13,7 @@ import "@/styles/quote-dialog.css";
 import "@/styles/footer-refinement.css";
 import "@/styles/desktop-nav-scale.css";
 import "@/styles/breadcrumbs.css";
+import "@/styles/inner-page-banners.css";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";
@@ -85,6 +86,7 @@ export function SiteFooter() {
   return <footer className="site-footer"><div className="site-shell footer-grid"><div className="footer-brand"><BrandMark light /><p>Premium African foods, sourced from Nigeria.</p></div><div className="footer-list"><span className="footer-label">Explore</span><Link href="/about">About us</Link><Link href="/products">Our products</Link><Link href="/gallery">Gallery</Link><Link href="/export">Export & wholesale</Link><Link href="/quality">Quality & sourcing</Link></div><div className="footer-list"><span className="footer-label">Speak with us</span><a href="mailto:info@karossyfoods.com">info@karossyfoods.com</a><a href="tel:+2348036481214">+234 803 648 1214</a><Link href="/contact">Request a quote <ArrowUpRight size={14} /></Link></div></div><div className="site-shell footer-base"><span>© 2026 Karossy Foods Limited</span><a className="footer-credit" href="https://ashflexwebdesign.com/" target="_blank" rel="noreferrer">Powered by Ashflex</a><span>Authentic African Foods. From Nigeria to the World.</span></div></footer>;
 }
 
-export function PageLead({ eyebrow, title, description }: { eyebrow: string; title: ReactNode; description: string }) {
-  return <section className="page-lead"><div className="page-route-spine" aria-hidden="true"><i /><i /><i /></div><div className="site-shell page-lead-grid"><div className="page-lead-meta"><Breadcrumbs items={[{ label: eyebrow }]} /><div className="route-kicker"><span /> {eyebrow}</div></div><div><h1>{title}</h1><p>{description}</p></div></div></section>;
+export function PageLead({ eyebrow, title, description, bannerImage, bannerPosition = "center", bannerVariant = "standard" }: { eyebrow: string; title: ReactNode; description: string; bannerImage?: string; bannerPosition?: string; bannerVariant?: "standard" | "about" | "products" | "export" | "quality" | "gallery" }) {
+  const bannerStyle = bannerImage ? { "--page-lead-image": `url(${bannerImage})`, "--page-lead-position": bannerPosition } as CSSProperties : undefined;
+  return <section className={bannerImage ? `page-lead page-lead-image page-lead-image-${bannerVariant}` : "page-lead"} style={bannerStyle}>{bannerImage && <><div className="page-lead-media" aria-hidden="true" /><div className="page-lead-seal" aria-hidden="true"><img src={monogram} alt="" /><span>Karossy<br />sourcing route</span></div></>}<div className="page-route-spine" aria-hidden="true"><i /><i /><i /></div><div className="site-shell page-lead-grid"><div className="page-lead-meta"><Breadcrumbs inverse={Boolean(bannerImage)} items={[{ label: eyebrow }]} /><div className="route-kicker"><span /> {eyebrow}</div></div><div className="page-lead-copy"><h1>{title}</h1><p>{description}</p></div></div></section>;
 }

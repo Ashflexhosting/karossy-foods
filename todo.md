@@ -255,3 +255,9 @@
 - [x] Review shared application routing and product detail layout for scroll, transition, and back-to-top enhancements.
 - [x] Add global route scroll resets, a subtle route-transition indicator, and a floating product-page back-to-top control.
 - [x] Verify desktop and mobile route changes and long product-page navigation, then save a checkpoint.
+
+# Desktop Hero Headline Composition Checklist
+
+- [x] Review the desktop hero type measure and line-break structure against the requested two-line composition.
+- [x] Refine the desktop and laptop headline treatment while retaining the current mobile layout.
+- [x] Verify the hero at desktop, laptop, and mobile dimensions, then save a checkpoint.

@@ -225,3 +225,9 @@
 - [x] Review the campaign selector and define a stronger selected state with preview interactions.
 - [x] Implement campaign-preview popups and clearer active campaign color treatment.
 - [ ] Verify the selector across desktop and mobile, then refresh the GitHub Pages deployment.
+
+# Immediate Campaign Switching Checklist
+
+- [x] Remove the preview popup and restore direct campaign selection behavior.
+- [x] Make each campaign option switch its background, copy, and action immediately on click.
+- [x] Verify the immediate campaign switcher across desktop and mobile, then save a checkpoint.

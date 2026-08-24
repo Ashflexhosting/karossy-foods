@@ -6,14 +6,9 @@ import { ArrowDown, ArrowUpRight, Check, MoveUpRight, Sprout } from "lucide-reac
 import { Link, useLocation } from "wouter";
 import { SiteFooter, SiteHeader } from "@/components/SiteLayout";
 import "@/styles/home-route-system.css";
-import "@/styles/home-product-hero.css";
 import "@/styles/seasonal-banners.css";
 
-const heroProducts = [
-  { name: "Palm oil", image: "/manus-storage/palm-oil_446bba82.jpg" },
-  { name: "Ijebu Garri", image: "/manus-storage/garri_c60344a4.jpg" },
-  { name: "Dried snail", image: "/manus-storage/dried-snail_72b85033.jpg" },
-];
+const heroImage = "/manus-storage/karossy-hero-ingredients_18d4b704.jpg";
 const mangoImage = "/manus-storage/karossy-products-mango_c6a8de61.jpg";
 const traceImage = "/manus-storage/karossy-traceability_25ffa369.jpg";
 
@@ -38,7 +33,7 @@ export default function Home() {
   const campaignKey = campaignParam === "festive" || campaignParam === "wholesale" ? campaignParam : "harvest";
   const campaign = campaigns[campaignKey];
   const seasonalDestination = campaignKey === "wholesale" ? "/contact" : "/products";
-  return <div className="app-shell home-page"><div className="hero-wrap"><div className="hero-product-collage" aria-hidden="true">{heroProducts.map((product, index) => <div key={product.name} className={`hero-product-cell hero-product-cell-${index + 1}`} style={{ backgroundImage: `url(${product.image})` }}><span>{product.name}</span></div>)}</div><div className="hero-wash" aria-hidden="true" /><SiteHeader inverse /><main><section className="hero site-shell"><div className="hero-copy"><div className="eyebrow eyebrow-light"><span className="pulse-dot" /> Nigerian ingredients for global buyers</div><h1>Nigerian ingredients.<br /><em>Built for your</em><br />market.</h1><p>Karossy Foods helps retail, wholesale and food-service buyers source Nigerian and African products around the right mix, quantities and destination requirements.</p><div className="hero-actions"><Link href="/products" className="button button-saffron">View product categories <ArrowUpRight size={18} /></Link><Link href="/contact" className="text-button text-button-light">Start a sourcing brief <ArrowDown size={17} /></Link></div></div><div className="hero-origin-stamp"><span className="stamp-ring">Nigeria / Markets / Sourcing / Supply /</span><span className="stamp-center">KF</span></div><div className="hero-bottom-row"><div className="hero-route"><span /> From crop selection to market-ready supply.</div><div className="hero-scroll">Scroll to explore <ArrowDown size={15} /></div></div></section></main></div>
+  return <div className="app-shell home-page"><div className="hero-wrap"><div className="hero-art" style={{ backgroundImage: `url(${heroImage})` }} aria-hidden="true" /><div className="hero-wash" aria-hidden="true" /><SiteHeader inverse /><main><section className="hero site-shell"><div className="hero-copy"><div className="eyebrow eyebrow-light"><span className="pulse-dot" /> Nigerian ingredients for global buyers</div><h1>Nigerian ingredients.<br /><em>Built for your</em><br />market.</h1><p>Karossy Foods helps retail, wholesale and food-service buyers source Nigerian and African products around the right mix, quantities and destination requirements.</p><div className="hero-actions"><Link href="/products" className="button button-saffron">View product categories <ArrowUpRight size={18} /></Link><Link href="/contact" className="text-button text-button-light">Start a sourcing brief <ArrowDown size={17} /></Link></div></div><div className="hero-origin-stamp"><span className="stamp-ring">Nigeria / Markets / Sourcing / Supply /</span><span className="stamp-center">KF</span></div><div className="hero-bottom-row"><div className="hero-route"><span /> From crop selection to market-ready supply.</div><div className="hero-scroll">Scroll to explore <ArrowDown size={15} /></div></div></section></main></div>
 
     <section className="feature-strip"><div className="site-shell feature-strip-grid"><div className="feature-stat"><strong>01</strong><span>Proudly Nigerian</span></div><div className="feature-stat"><strong>02</strong><span>African Food Specialists</span></div><div className="feature-stat"><strong>03</strong><span>Wholesale Supply</span></div><div className="feature-stat"><strong>04</strong><span>Export Ready</span></div><div className="feature-stat"><strong>05</strong><span>Quality Focused</span></div></div></section>
 

@@ -200,9 +200,3 @@
 - [x] Inspect the Contact banner background image, focal point, and overlay contrast at desktop and mobile sizes.
 - [x] Refine the banner background treatment to improve visual balance and clarity.
 - [x] Verify the corrected Contact banner, then save a checkpoint.
-
-# Homepage Export Product Hero Checklist
-
-- [x] Source and upload suitable real palm oil, garri, and dried snail product imagery for the homepage hero.
-- [x] Build a contrast-safe homepage hero composition using the selected export-product imagery.
-- [x] Verify the revised homepage hero at desktop and mobile sizes, then save a checkpoint.

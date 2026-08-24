@@ -146,3 +146,9 @@
 - [x] Define product information accordion groups and the product-level quote-modal trigger.
 - [x] Implement accordion tabs and the wholesale inquiry action beside approved product details.
 - [x] Verify compact product details and quote interaction at desktop and mobile sizes, then save a checkpoint.
+
+# Approved Product Image Replacement Checklist
+
+- [x] Select the matching real product image for each approved product-sheet panel.
+- [x] Replace approved-sheet artwork with the corresponding product imagery while retaining the verified details.
+- [x] Verify the revised product panels at desktop and mobile sizes, then save a checkpoint.

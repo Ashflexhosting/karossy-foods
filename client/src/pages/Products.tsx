@@ -8,7 +8,7 @@ import "@/styles/catalogue-enhancement.css";
 import "@/styles/dossier-expansion.css";
 
 const botanicalImage = "/manus-storage/karossy-botanical-detail_d9ef6275.jpg";
-const mark = "/manus-storage/karossy-logomark_32223915.png";
+const mark = "/manus-storage/karossy-glossy-leaf-s-favicon_68b5b543.png";
 
 function PackSpecification() {
   return <div className="pack-specs"><div className="pack-spec-title"><PackageOpen size={18} /><span>Commercial information</span><em>Available on request</em></div><div className="pack-spec-groups"><div className="pack-spec-group"><span>Pack & format</span><dl><div><dt>Retail pack sizes</dt><dd>Available on request</dd></div><div><dt>Wholesale / bulk packs</dt><dd>Available on request</dd></div><div><dt>Packaging format</dt><dd>Available on request</dd></div></dl></div><div className="pack-spec-group"><span>Supply & handling</span><dl><div><dt>Case configuration</dt><dd>Available on request</dd></div><div><dt>Minimum order quantity</dt><dd>Available on request</dd></div><div><dt>Storage & shelf life</dt><dd>Available on request</dd></div></dl></div></div></div>;

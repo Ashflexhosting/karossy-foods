@@ -8,7 +8,7 @@ import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/SiteLayout";
 import { contactDetails, whatsappEnquiryUrl } from "@/lib/contactDetails";
 import "@/styles/contact-export-brief.css";
 
-const monogram = "/manus-storage/karossy-favicon-leaf-s_84ebb102.png";
+const monogram = "/manus-storage/karossy-glossy-leaf-s-favicon_68b5b543.png";
 const lagosOfficeMapUrl = `https://www.google.com/maps?q=${encodeURIComponent(contactDetails.address)}&z=15&output=embed`;
 
 export default function Contact() {

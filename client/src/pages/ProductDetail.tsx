@@ -11,7 +11,7 @@ import "@/styles/product-detail.css";
 import "@/styles/approved-product-sheet.css";
 import "@/styles/approved-product-accordion.css";
 
-const mark = "/manus-storage/karossy-logomark_32223915.png";
+const mark = "/manus-storage/karossy-glossy-leaf-s-favicon_68b5b543.png";
 
 function ApprovedProductSheet({ product, productImage, productImageAlt }: { product: NonNullable<(typeof productCategories)[number]["approvedSheet"]>; productImage: string; productImageAlt: string }) {
   const openQuote = () => window.dispatchEvent(new CustomEvent("karossy:quote", { detail: { product: product.productName } }));

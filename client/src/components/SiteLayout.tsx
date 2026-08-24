@@ -18,9 +18,8 @@ import "@/styles/production-template-refinement.css";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { contactDetails, whatsappEnquiryUrl } from "@/lib/contactDetails";
 
-const mark = "/manus-storage/karossy-logomark_32223915.png";
 const logo = "/manus-storage/karossy-foods-logo_dbfe97cf.png";
-const monogram = "/manus-storage/karossy-favicon-leaf-s_84ebb102.png";
+const monogram = "/manus-storage/karossy-glossy-leaf-s-favicon_68b5b543.png";
 
 const navItems = [
   { label: "Home", href: "/", icon: House, hint: "Return to the source" },

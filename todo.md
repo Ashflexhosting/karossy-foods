@@ -381,6 +381,12 @@
 - [x] Create a 32px favicon variant and an Apple touch icon from the new green-and-gold mark.
 - [x] Update social sharing metadata to feature the new mark, verify the references, and save a checkpoint.
 
+# Green-and-Gold Mark Replacement Checklist
+
+- [x] Audit the application for every remaining reference to the previous leaf icon asset.
+- [x] Replace legacy icon usage with the approved green-and-gold mark while preserving layout and accessible text.
+- [x] Verify the replacement across shared components and key pages, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

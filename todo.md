@@ -188,3 +188,9 @@
 - [x] Review desktop and mobile primary navigation capacity for an additional Contact link.
 - [x] Add Contact to the shared primary navigation with its matching icon and active-route state.
 - [x] Verify the desktop and mobile navigation update, then save a checkpoint.
+
+# Office Location Panel Correction Checklist
+
+- [x] Replace the blank map frame with a reliable office-location and directions treatment.
+- [x] Align the Lagos office heading, address, directions action, and location panel across desktop and mobile.
+- [x] Verify the corrected office-location section, then save a checkpoint.

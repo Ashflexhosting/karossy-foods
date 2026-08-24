@@ -1,0 +1,23 @@
+/* Meridian Pantry product dossiers: botanical route seals, varied export fields, and non-generic information rhythm. */
+.category-detail-card:nth-child(even) { grid-template-columns:1.24fr .76fr; }
+.category-detail-card:nth-child(even) .category-photo-placeholder { order:2; }
+.category-detail-card:nth-child(3n) .category-photo-placeholder::after { width:250px; height:130px; border-radius:48% 52% 41% 59%; transform:rotate(-28deg); }
+.category-detail-card:nth-child(3n + 2) .category-photo-placeholder::before { border-radius:67% 33% 61% 39%; }
+.category-photo-placeholder { gap:0; justify-content:space-between; }
+.photo-placeholder-top { position:relative; z-index:1; display:flex; align-items:center; gap:9px; }
+.photo-placeholder-top img { width:32px; height:32px; object-fit:contain; }
+.photo-placeholder-top span,.photo-route-caption { font-size:9px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
+.photo-placeholder-main { position:relative; z-index:1; display:flex; flex-direction:column; align-items:flex-start; }
+.category-photo-placeholder strong { max-width:205px; margin-top:16px; }
+.category-photo-placeholder small { max-width:195px; }
+.photo-route-caption { position:relative; z-index:1; display:flex; align-items:center; gap:7px; color:inherit; opacity:.78; }
+.category-dossier-line { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.category-dossier-line span { color:#b79868; font-size:9px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
+.category-dossier-line img { width:25px; height:25px; object-fit:contain; }
+.category-card-header h3 { margin-top:12px; }
+.pack-spec-title em { color:#d27825; }
+.pack-specs dd { color:#21564b; }
+.pack-specs dl>div:nth-child(3n) { background:linear-gradient(90deg,rgba(243,167,45,.11),transparent); }
+.category-detail-card:nth-child(even) .category-specs { background:rgba(245,241,232,.7); }
+@media (max-width:900px) { .category-detail-card:nth-child(even) { grid-template-columns:.52fr 1.48fr; }.category-detail-card:nth-child(even) .category-photo-placeholder { order:2; } }
+@media (max-width:680px) { .category-detail-card:nth-child(even) { grid-template-columns:1fr; }.category-detail-card:nth-child(even) .category-photo-placeholder { order:0; }.photo-placeholder-main { margin-top:24px; }.category-photo-placeholder strong { margin-top:12px; }.photo-route-caption { margin-top:22px; } }

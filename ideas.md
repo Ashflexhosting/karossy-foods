@@ -56,3 +56,5 @@
 - The meridian route is a structural navigation language on every interior page: dashed side spines, circular waypoints and visible handover sequences guide the reader through the content.
 - Product and export pages use tactile ingredient photography and documentary crop moments alongside commerce information to remain sensory and provenance-led.
 - The Karossy mark is treated as a botanical forward-route monogram and recurs as a seal or waypoint where appropriate.
+
+- Product-detail placeholders are composed as **Karossy export dossiers**: branded image fields, route captions and restrained pack-size framework labels avoid an administrative spreadsheet feel while retaining clear editorial guidance for future approved content.

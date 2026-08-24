@@ -4,3 +4,9 @@
 - [x] Compare document content with the existing page copy and identify required corrections.
 - [x] Update all website pages with the approved content and strengthen the shared route motif.
 - [x] Verify desktop and mobile page rendering, then save a release checkpoint.
+
+# Product Catalogue Enhancement Checklist
+
+- [x] Define the photography placeholder label and editable pack-size fields for each approved category.
+- [x] Add detailed category cards with photography placeholders and pack-size specification blocks to the product page.
+- [x] Verify the enhanced catalogue at desktop and mobile dimensions, then save a checkpoint.

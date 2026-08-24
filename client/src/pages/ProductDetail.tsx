@@ -1,4 +1,5 @@
 /** Meridian Pantry product page: a quote-led sourcing brief that pairs tactile origin imagery with buyer-ready commercial prompts. */
+import { useEffect } from "react";
 import { ArrowLeft, ArrowUpRight, Check, MessageCircle, PackageOpen, Route, ShieldCheck } from "lucide-react";
 import { Link, useRoute } from "wouter";
 import NotFound from "@/pages/NotFound";
@@ -20,6 +21,7 @@ function ApprovedProductSheet({ product, productImage, productImageAlt }: { prod
 export default function ProductDetail() {
   const [, params] = useRoute("/products/:slug");
   const product = productCategories.find((entry) => entry.slug === params?.slug);
+  useEffect(() => { window.scrollTo({ top: 0, left: 0, behavior: "auto" }); }, [params?.slug]);
   if (!product) return <NotFound />;
 
   const whatsappMessage = `Hello Karossy Foods, I am interested in ${product.name}. I would like to know availability, price, pack size and wholesale/export options.`;

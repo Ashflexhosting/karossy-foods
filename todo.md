@@ -243,3 +243,9 @@
 - [x] Review the shared product data model and define buyer-safe dried and packaged Nigerian snail copy.
 - [x] Add the snail product category to the catalogue, product route, and homepage product selection.
 - [x] Verify the expanded product catalogue at desktop and mobile sizes, then save a checkpoint.
+
+# Product Detail Scroll Position Checklist
+
+- [x] Inspect shared route handling and product-card navigation scroll behavior.
+- [x] Reset scroll position to the page top when a product detail route opens.
+- [x] Verify product-card navigation from the catalogue opens the corresponding detail route at the page top, then save a checkpoint.

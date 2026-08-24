@@ -206,3 +206,10 @@
 - [x] Create a high-quality abstract agricultural hero image tailored to Karossy Foods.
 - [x] Apply the abstract agricultural image with a contrast-safe homepage hero treatment.
 - [x] Verify the revised homepage hero at desktop and mobile sizes, then save a checkpoint.
+
+# Homepage Motion & Seasonal Abstracts Checklist
+
+- [x] Define rotating product-focus captions, matching seasonal abstract visual directions, and reduced-motion-safe parallax behavior.
+- [x] Generate three coordinated abstract crop images for the seasonal campaign variants.
+- [x] Implement the rotating caption, seasonal abstract backgrounds, and subtle hero parallax effect.
+- [x] Verify homepage interaction, campaign variants, and mobile behavior, then save a checkpoint.

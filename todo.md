@@ -213,3 +213,9 @@
 - [x] Generate three coordinated abstract crop images for the seasonal campaign variants.
 - [x] Implement the rotating caption, seasonal abstract backgrounds, and subtle hero parallax effect.
 - [x] Verify homepage interaction, campaign variants, and mobile behavior, then save a checkpoint.
+
+# GitHub Pages Publication Checklist
+
+- [x] Inspect the selected Karossy Foods repository and its current GitHub Pages configuration; the public repository is empty and GitHub Pages is not yet configured.
+- [x] Build the static site and publish the distributable output to GitHub Pages.
+- [x] Verify the public Pages URL, HTTPS status, and successful build state.

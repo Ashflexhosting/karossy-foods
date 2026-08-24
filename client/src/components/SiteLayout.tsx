@@ -2,7 +2,7 @@
  * Meridian Pantry design system: Canopy Green, harvest saffron, and a visible route-spine
  * create the premium Nigerian food-export identity used across Karossy Foods pages.
  */
-import { ArrowUpRight, Building2, CheckCircle2, House, Images, Mail, Menu, MessageCircle, Package, Phone, ShieldCheck, Ship, X } from "lucide-react";
+import { ArrowUpRight, Building2, CheckCircle2, ChevronRight, House, Images, Mail, Menu, MessageCircle, Package, Phone, ShieldCheck, Ship, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { useEffect, useState, type FormEvent } from "react";
 import type { ReactNode } from "react";
@@ -12,6 +12,7 @@ import "@/styles/mobile-nav-icons.css";
 import "@/styles/quote-dialog.css";
 import "@/styles/footer-refinement.css";
 import "@/styles/desktop-nav-scale.css";
+import "@/styles/breadcrumbs.css";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";
@@ -29,6 +30,12 @@ const navItems = [
 
 export function BrandMark({ light = false }: { light?: boolean }) {
   return <div className={light ? "brand-lockup brand-lockup-logo brand-lockup-logo-light" : "brand-lockup brand-lockup-logo"} aria-label="Karossy Foods Limited"><img src={monogram} alt="" className="brand-monogram" /><img src={logo} alt="Karossy Foods" className="brand-logo" /></div>;
+}
+
+type BreadcrumbItem = { label: string; href?: string };
+
+export function Breadcrumbs({ items, inverse = false }: { items: BreadcrumbItem[]; inverse?: boolean }) {
+  return <nav className={inverse ? "breadcrumbs breadcrumbs-inverse" : "breadcrumbs"} aria-label="Breadcrumb"><Link href="/">Home</Link>{items.map((item, index) => <span className="breadcrumb-segment" key={`${item.label}-${index}`}><ChevronRight size={12} aria-hidden="true" />{item.href ? <Link href={item.href}>{item.label}</Link> : <span aria-current="page">{item.label}</span>}</span>)}</nav>;
 }
 
 export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
@@ -79,5 +86,5 @@ export function SiteFooter() {
 }
 
 export function PageLead({ eyebrow, title, description }: { eyebrow: string; title: ReactNode; description: string }) {
-  return <section className="page-lead"><div className="page-route-spine" aria-hidden="true"><i /><i /><i /></div><div className="site-shell page-lead-grid"><div className="route-kicker"><span /> {eyebrow}</div><div><h1>{title}</h1><p>{description}</p></div></div></section>;
+  return <section className="page-lead"><div className="page-route-spine" aria-hidden="true"><i /><i /><i /></div><div className="site-shell page-lead-grid"><div className="page-lead-meta"><Breadcrumbs items={[{ label: eyebrow }]} /><div className="route-kicker"><span /> {eyebrow}</div></div><div><h1>{title}</h1><p>{description}</p></div></div></section>;
 }

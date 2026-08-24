@@ -104,3 +104,9 @@
 - [x] Define scroll-state shadow behavior and tablet header spacing.
 - [x] Implement the scroll shadow and tablet-specific header layout.
 - [x] Verify desktop, tablet, and mobile header behavior, then save a checkpoint.
+
+# Inner-Page Breadcrumb Checklist
+
+- [x] Define route-consistent breadcrumb labels for all inner pages, including category-page parent and current-category states.
+- [x] Add a compact shared breadcrumb to the inner page layouts.
+- [x] Verify breadcrumb behavior at desktop and mobile sizes, then save a checkpoint.

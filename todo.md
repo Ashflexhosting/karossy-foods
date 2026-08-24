@@ -176,3 +176,9 @@
 - [x] Confirm the Lagos office hours: Mondays–Fridays, 8am–6pm; Saturdays, 10am–4pm; Sundays/Public Holidays, closed. Review the shared site layout for the floating WhatsApp action.
 - [x] Add verified working hours below the contact details and a persistent WhatsApp action button across the site.
 - [x] Verify the new contact-accessibility elements at desktop and mobile sizes, then save a checkpoint.
+
+# Mobile Active-Route Indicator Correction Checklist
+
+- [x] Identify the styling that leaves the active-route status bar visible without its label.
+- [x] Remove the stray indicator while preserving a clear active mobile menu treatment.
+- [x] Verify the corrected mobile menu, then save a checkpoint.

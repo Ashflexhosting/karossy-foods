@@ -152,3 +152,9 @@
 - [x] Select the matching real product image for each approved product-sheet panel.
 - [x] Replace approved-sheet artwork with the corresponding product imagery while retaining the verified details.
 - [x] Verify the revised product panels at desktop and mobile sizes, then save a checkpoint.
+
+# About Purpose Image Replacement Checklist
+
+- [x] Upload the supplied grocery-shopping image for durable website use and locate the Our Purpose media reference.
+- [x] Replace the About page Our Purpose image with the supplied photograph.
+- [x] Verify the image treatment at desktop and mobile sizes, then save a checkpoint.

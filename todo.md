@@ -364,6 +364,17 @@
 - [x] Verify desktop and mobile header balance across homepage and inner-page routes.
 - [x] Save the verified compact-header update and report completion.
 
+# Transparent Replacement Favicon Checklist
+
+- [x] Use the user-supplied transparent green-and-gold mark, preserving its glossy shape and colours.
+- [x] Replace the website favicon reference with the approved transparent asset.
+- [x] Verify the favicon asset and save the published update.
+
+# Supplied Transparent Favicon Asset Checklist
+
+- [x] Use the newly supplied transparent green-and-gold mark as the approved favicon source.
+- [x] Confirm the website favicon reference resolves to the supplied transparent asset.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

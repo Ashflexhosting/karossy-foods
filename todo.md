@@ -298,6 +298,12 @@
 - [x] Apply full-hero black coverage with subtle grain and replace selected green image washes with black overlays.
 - [x] Verify contrast and imagery across desktop and mobile, then save a checkpoint.
 
+# Dark Enquiry Form & Product Hover Checklist
+
+- [x] Review the enquiry modal and homepage product-card styles against the black editorial visual system.
+- [x] Apply dark-mode form styling and a lift-plus-image-brightening product-card hover effect.
+- [x] Verify the form and card interactions across desktop and mobile, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

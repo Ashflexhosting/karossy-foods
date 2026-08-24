@@ -219,3 +219,9 @@
 - [x] Inspect the selected Karossy Foods repository and its current GitHub Pages configuration; the public repository is empty and GitHub Pages is not yet configured.
 - [x] Build the static site and publish the distributable output to GitHub Pages.
 - [x] Verify the public Pages URL, HTTPS status, and successful build state.
+
+# Campaign Selector Preview & Pages Refresh Checklist
+
+- [x] Review the campaign selector and define a stronger selected state with preview interactions.
+- [x] Implement campaign-preview popups and clearer active campaign color treatment.
+- [ ] Verify the selector across desktop and mobile, then refresh the GitHub Pages deployment.

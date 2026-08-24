@@ -37,3 +37,8 @@
 - [x] Build the category pages and connect product dossier cards to them.
 - [x] Replace dossier placeholders with the approved “available on request” commercial detail state.
 - [x] Verify all product journeys and save a checkpoint.
+
+# Favicon Update Checklist
+
+- [x] Prepare the supplied leaf-and-S favicon asset for web use.
+- [x] Reference the new favicon in the website metadata and verify the build.

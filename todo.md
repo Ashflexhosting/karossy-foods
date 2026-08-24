@@ -304,6 +304,12 @@
 - [x] Apply dark-mode form styling and a lift-plus-image-brightening product-card hover effect.
 - [x] Verify the form and card interactions across desktop and mobile, then save a checkpoint.
 
+# Product Selection Background Checklist
+
+- [x] Review the current homepage Product Selection backdrop and define a distinct, readable replacement.
+- [x] Apply the new background treatment while preserving heading and product-card contrast.
+- [x] Verify the Product Selection section at desktop and mobile dimensions, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

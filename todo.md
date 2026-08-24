@@ -83,3 +83,8 @@
 - [x] Define the Ashflex footer attribution, WhatsApp quick-contact link, and active-route emphasis.
 - [x] Implement the footer attribution and mobile navigation refinements.
 - [x] Verify the footer and mobile menu changes, then save a checkpoint.
+
+# Desktop Navigation Readability Checklist
+
+- [x] Increase desktop navigation text size and spacing.
+- [x] Verify the enlarged header navigation, then save a checkpoint.

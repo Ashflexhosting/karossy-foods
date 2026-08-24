@@ -11,6 +11,7 @@ import "@/styles/sticky-header.css";
 import "@/styles/mobile-nav-icons.css";
 import "@/styles/quote-dialog.css";
 import "@/styles/footer-refinement.css";
+import "@/styles/desktop-nav-scale.css";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";

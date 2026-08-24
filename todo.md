@@ -164,3 +164,9 @@
 - [x] Extract and verify the supplied Lagos address and both phone numbers.
 - [x] Update the contact page, shared footer, mobile quick-contact panel, and wholesale enquiry links.
 - [x] Verify all contact links and layouts, then save a checkpoint.
+
+# Contact Page Conversion Enhancements Checklist
+
+- [x] Review the existing map component and contact-page layout for the new WhatsApp, map, and direct-inquiry requirements.
+- [x] Add the Nigerian WhatsApp greeting link, interactive Lagos office map, and direct-inquiry form beside the address details.
+- [x] Verify the contact-page enhancements at desktop and mobile sizes, then save a checkpoint.

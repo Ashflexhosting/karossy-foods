@@ -261,3 +261,9 @@
 - [x] Review the desktop hero type measure and line-break structure against the requested two-line composition.
 - [x] Refine the desktop and laptop headline treatment while retaining the current mobile layout.
 - [x] Verify the hero at desktop, laptop, and mobile dimensions, then save a checkpoint.
+
+# Hero Headline Entrance Animation Checklist
+
+- [x] Define a subtle staggered fade-in for the two homepage headline lines with reduced-motion support.
+- [x] Implement the desktop and mobile-safe headline entrance animation.
+- [x] Verify the loading composition and save a checkpoint.

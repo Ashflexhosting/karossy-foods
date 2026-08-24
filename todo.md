@@ -358,6 +358,12 @@
 - [x] Redesign Quality & Sourcing and add a clear destination-market guidance section to Export & Wholesale.
 - [x] Verify both pages at desktop and mobile dimensions, complete a visual review, and save a checkpoint.
 
+# Compact Header Spacing Verification Checklist
+
+- [x] Confirm the shared header uses the requested 14px vertical spacing without redundant layout rules.
+- [x] Verify desktop and mobile header balance across homepage and inner-page routes.
+- [x] Save the verified compact-header update and report completion.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

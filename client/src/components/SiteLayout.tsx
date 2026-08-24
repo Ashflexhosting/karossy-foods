@@ -85,7 +85,7 @@ export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
     window.location.href = `mailto:${contactDetails.email}?subject=${subject}&body=${body}`;
     setQuoteSent(true);
   };
-  return <header className={`${inverse ? "site-header site-header-inverse" : "site-header"}${innerPage ? " site-header-inner-green" : ""}${scrolled ? " site-header-scrolled" : ""}`}>
+  return <header className={`${inverse ? "site-header site-header-inverse" : "site-header"}${innerPage ? " site-header-inner-green" : ""}${scrolled ? " site-header-scrolled" : ""}`} style={{paddingBottom: '14px', paddingTop: '14px'}}>
     <div className="site-shell header-inner">
       <Link href="/" className="brand-link"><BrandMark light={inverse || innerPage} /></Link>
       <nav className="desktop-nav" aria-label="Main navigation">{navItems.map((item) => <Link key={item.href} href={item.href} data-nav-hint={item.hint} className={isActive(item.href) ? "nav-link nav-link-active" : "nav-link"}>{item.label}</Link>)}</nav>

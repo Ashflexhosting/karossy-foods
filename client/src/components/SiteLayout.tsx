@@ -14,6 +14,7 @@ import "@/styles/footer-refinement.css";
 import "@/styles/desktop-nav-scale.css";
 import "@/styles/breadcrumbs.css";
 import "@/styles/inner-page-banners.css";
+import "@/styles/production-template-refinement.css";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";
@@ -30,7 +31,7 @@ const navItems = [
 ];
 
 export function BrandMark({ light = false }: { light?: boolean }) {
-  return <div className={light ? "brand-lockup brand-lockup-logo brand-lockup-logo-light" : "brand-lockup brand-lockup-logo"} aria-label="Karossy Foods Limited"><img src={monogram} alt="" className="brand-monogram" /><img src={logo} alt="Karossy Foods" className="brand-logo" /></div>;
+  return <div className={light ? "brand-lockup brand-lockup-logo brand-lockup-logo-light" : "brand-lockup brand-lockup-logo"} aria-label="Karossy Foods Limited"><span className="brand-route-seal" aria-hidden="true"><img src={monogram} alt="" className="brand-monogram" /></span><img src={logo} alt="Karossy Foods" className="brand-logo" /></div>;
 }
 
 type BreadcrumbItem = { label: string; href?: string };
@@ -83,7 +84,7 @@ export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
 }
 
 export function SiteFooter() {
-  return <footer className="site-footer"><div className="site-shell footer-grid"><div className="footer-brand"><BrandMark light /><p>Premium African foods, sourced from Nigeria.</p></div><div className="footer-list"><span className="footer-label">Explore</span><Link href="/about">About us</Link><Link href="/products">Our products</Link><Link href="/gallery">Gallery</Link><Link href="/export">Export & wholesale</Link><Link href="/quality">Quality & sourcing</Link></div><div className="footer-list"><span className="footer-label">Speak with us</span><a href="mailto:info@karossyfoods.com">info@karossyfoods.com</a><a href="tel:+2348036481214">+234 803 648 1214</a><Link href="/contact">Request a quote <ArrowUpRight size={14} /></Link></div></div><div className="site-shell footer-base"><span>© 2026 Karossy Foods Limited</span><a className="footer-credit" href="https://ashflexwebdesign.com/" target="_blank" rel="noreferrer">Powered by Ashflex</a><span>Authentic African Foods. From Nigeria to the World.</span></div></footer>;
+  return <footer className="site-footer"><div className="site-shell footer-grid"><div className="footer-brand"><BrandMark light /><p>Nigerian ingredients for retail, wholesale and export buyers.</p></div><div className="footer-list"><span className="footer-label">Explore</span><Link href="/about">About us</Link><Link href="/products">Our products</Link><Link href="/gallery">Gallery</Link><Link href="/export">Export & wholesale</Link><Link href="/quality">Quality & sourcing</Link></div><div className="footer-list"><span className="footer-label">Speak with us</span><a href="mailto:info@karossyfoods.com">info@karossyfoods.com</a><a href="tel:+2348036481214">+234 803 648 1214</a><Link href="/contact">Request a quote <ArrowUpRight size={14} /></Link></div></div><div className="site-shell footer-base"><span>© 2026 Karossy Foods Limited</span><a className="footer-credit" href="https://ashflexwebdesign.com/" target="_blank" rel="noreferrer">Powered by Ashflex</a><span>Sourcing routes from Nigeria to your market.</span></div></footer>;
 }
 
 export function PageLead({ eyebrow, title, description, bannerImage, bannerPosition = "center", bannerVariant = "standard" }: { eyebrow: string; title: ReactNode; description: string; bannerImage?: string; bannerPosition?: string; bannerVariant?: "standard" | "about" | "products" | "export" | "quality" | "gallery" }) {

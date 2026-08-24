@@ -127,3 +127,9 @@
 - [x] Define product-specific category banner treatments and reusable seasonal campaign variants for new harvest, festive table, and wholesale planning campaigns.
 - [x] Implement the enhanced category-detail banners and seasonal campaign switch system.
 - [x] Verify category and seasonal banner variants at desktop and mobile sizes, then save a checkpoint.
+
+# Production Template Realism Checklist
+
+- [x] Audit repetitive decorative patterns, typography scale, and component density across the shared experience.
+- [x] Refine shared structure and core page patterns toward a more credible production template.
+- [x] Verify the revised visual system at desktop and mobile sizes, then save a checkpoint.

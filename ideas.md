@@ -76,3 +76,5 @@
 - The Gallery is a **visual sourcing journal**, not a generic image grid: uneven editorial apertures, product-route captions and a final supply handover keep every image connected to an origin and buyer conversation.
 
 - Enquiry moments are treated as **Karossy export briefs**: crop, quantity, destination and timing form the visible handover language, while the botanical route seal appears wherever a buyer begins their sourcing conversation.
+
+- The production-template layer uses the leaf-and-S monogram as a restrained Canopy Green and saffron route seal beside the supplied wordmark. Copy prioritises a concrete buyer action, product, season, or destination over generic category claims.

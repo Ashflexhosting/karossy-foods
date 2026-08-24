@@ -352,6 +352,12 @@
 - [x] Redesign the page into a buyer-facing sourcing journey with clearer commercial stages and enquiry paths.
 - [x] Verify desktop and mobile layouts, complete a visual review, and save a checkpoint.
 
+# Quality & Sourcing Redesign and Export Guidance Checklist
+
+- [x] Review the Quality & Sourcing page and define approved destination-market guidance for international wholesale buyers.
+- [x] Redesign Quality & Sourcing and add a clear destination-market guidance section to Export & Wholesale.
+- [x] Verify both pages at desktop and mobile dimensions, complete a visual review, and save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

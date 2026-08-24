@@ -9,6 +9,7 @@ import { SiteFooter, SiteHeader } from "@/components/SiteLayout";
 import { whatsappEnquiryUrl } from "@/lib/contactDetails";
 import "@/styles/export-redesign.css";
 import "@/styles/export-route-refinement.css";
+import "@/styles/export-market-guidance.css";
 
 const palmOilImage = "/manus-storage/karossy-palm-oil-condiments_ec23c1b7.jpg";
 const botanicalImage = "/manus-storage/karossy-botanical-detail_d9ef6275.jpg";
@@ -76,6 +77,10 @@ export default function Export() {
 
         <section className="export-buyer-section">
           <div className="site-shell"><div className="export-buyer-heading"><div><div className="route-kicker route-kicker-light"><span /> Buyer fit</div><h2>For the businesses<br />that keep African food <em>moving.</em></h2></div><p>Built around buyer conversations rather than fixed terms, the route can begin wherever your market need begins.</p></div><div className="export-buyer-grid">{buyerProfiles.map(([number, title, copy], index) => <article key={number} className={`export-buyer-card export-buyer-card-${index + 1}`}><span>{number}</span><h3>{title}</h3><p>{copy}</p><i aria-hidden="true" /></article>)}</div><div className="export-buyer-handover"><span>04 / buyer fit</span><i /><strong>Brief ready for commercial discussion</strong><div className="export-provenance-seal export-provenance-seal-light"><span>Karossy / buyer handover</span><strong>KF</strong><small>Market brief</small></div></div></div>
+        </section>
+
+        <section className="export-market-guidance-section">
+          <div className="site-shell export-market-guidance-grid"><div className="export-market-guidance-copy"><div className="route-kicker"><span /> Destination-market guidance</div><h2>Start with the market.<br /><em>Work back to the product.</em></h2><p>For international wholesale buyers, the intended destination is a practical starting point. Requirements can vary by product, packaging format and market, so the buyer brief should make the destination clear from the outset.</p><p>Karossy can discuss the relevant product and supply information available for your request. Destination-market requirements should be confirmed for the specific product and market with the appropriate local, importer or regulatory sources.</p></div><div className="export-market-guidance-docket"><div className="export-market-guidance-docket-head"><span>International buyer note</span><strong>05 / destination check</strong></div><h3>Bring these four points to the conversation.</h3><ul><li><MapPin size={16} /><div><strong>Destination market</strong><span>The country or market where the product is intended to move.</span></div></li><li><ShoppingBasket size={16} /><div><strong>Product and format</strong><span>The category, presentation and packaging direction you have in mind.</span></div></li><li><Boxes size={16} /><div><strong>Commercial scope</strong><span>The quantity, range or buyer need that frames the enquiry.</span></div></li><li><FileCheck2 size={16} /><div><strong>Questions to clarify</strong><span>Any local buyer, importer or market requirements you need to discuss.</span></div></li></ul><Link href="/contact" className="text-button">Share your destination brief <ArrowUpRight size={17} /></Link></div></div>
         </section>
 
         <section className="export-briefing-section">

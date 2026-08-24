@@ -1,25 +1,36 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
-
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Meridian Pantry homepage: the master-document message is carried through an abundant,
+ * route-led Nigerian food-export composition rather than a generic grocery layout.
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+import { ArrowDown, ArrowUpRight, Check, MoveUpRight, Sprout } from "lucide-react";
+import { Link } from "wouter";
+import { SiteFooter, SiteHeader } from "@/components/SiteLayout";
 
-  return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
-    </div>
-  );
+const heroImage = "/manus-storage/karossy-hero-ingredients_18d4b704.jpg";
+const mangoImage = "/manus-storage/karossy-products-mango_c6a8de61.jpg";
+const traceImage = "/manus-storage/karossy-traceability_25ffa369.jpg";
+
+const productCategories = [
+  { no: "01", name: "Kilishi & dried meat", copy: "Traditional Nigerian dried meat products and African meat snacks.", tint: "product-mango" },
+  { no: "02", name: "Palm oil & condiments", copy: "Nigerian palm oil and traditional cooking ingredients.", tint: "product-botanical" },
+  { no: "03", name: "Garri & cassava", copy: "Ijebu Garri and other cassava-based staples.", tint: "product-grain" },
+  { no: "04", name: "Dried fish & seafood", copy: "Selected dried fish products for African food markets.", tint: "product-botanical" },
+  { no: "05", name: "Nuts & seeds", copy: "African nuts and seeds for retail and wholesale buyers.", tint: "product-grain" },
+  { no: "06", name: "Traditional ingredients", copy: "Authentic ingredients used in Nigerian and African cooking.", tint: "product-mango" },
+];
+
+export default function Home() {
+  return <div className="app-shell home-page"><div className="hero-wrap"><div className="hero-art" style={{ backgroundImage: `url(${heroImage})` }} aria-hidden="true" /><div className="hero-wash" aria-hidden="true" /><SiteHeader inverse /><main><section className="hero site-shell"><div className="hero-copy"><div className="eyebrow eyebrow-light"><span className="pulse-dot" /> Premium African foods, sourced from Nigeria</div><h1>Authentic African Foods.<br /><em>From Nigeria</em><br />to the World.</h1><p>Karossy Foods Limited supplies premium Nigerian and African food products to wholesalers, retailers, distributors, restaurants and consumers across international markets.</p><div className="hero-actions"><Link href="/products" className="button button-saffron">Explore our products <ArrowUpRight size={18} /></Link><Link href="/contact" className="text-button text-button-light">Request a wholesale quote <ArrowDown size={17} /></Link></div></div><div className="hero-origin-stamp"><span className="stamp-ring">Nigeria / World / Authentic / Supply /</span><span className="stamp-center">KF</span></div><div className="hero-bottom-row"><div className="hero-route"><span /> Authentic flavour, carefully sourced and reliably supplied.</div><div className="hero-scroll">Scroll to explore <ArrowDown size={15} /></div></div></section></main></div>
+
+    <section className="feature-strip"><div className="site-shell feature-strip-grid"><div className="feature-stat"><strong>01</strong><span>Proudly Nigerian</span></div><div className="feature-stat"><strong>02</strong><span>African Food Specialists</span></div><div className="feature-stat"><strong>03</strong><span>Wholesale Supply</span></div><div className="feature-stat"><strong>04</strong><span>Export Ready</span></div><div className="feature-stat"><strong>05</strong><span>Quality Focused</span></div></div></section>
+
+    <section className="intro-section section-pad"><div className="site-shell intro-grid"><div className="route-kicker"><span /> About Karossy Foods</div><div className="intro-copy"><h2>Connecting the World to Authentic African Foods</h2><p>Karossy Foods Limited is a Nigerian food sourcing, distribution and export company focused on bringing authentic African food products to customers and businesses around the world.</p><p>From traditional staples such as Ijebu Garri and palm oil to dried meats, fish, nuts, seeds and other African ingredients, our goal is simple: to make authentic African foods accessible wherever our customers are in the world.</p><Link href="/about" className="text-button">Learn more about Karossy Foods <ArrowUpRight size={17} /></Link></div></div></section>
+
+    <section className="products-section section-pad"><div className="site-shell section-head"><div><div className="route-kicker"><span /> Our products</div><h2>Rooted in flavour.<br /><em>Ready for supply.</em></h2></div><Link href="/products" className="button button-forest">Explore all products <ArrowUpRight size={17} /></Link></div><div className="site-shell product-rail product-rail-expanded">{productCategories.map((product) => <Link href="/products" className={`product-tile ${product.tint}`} key={product.no}><span className="tile-index">{product.no}</span><div className="tile-content"><h3>{product.name}</h3><p>{product.copy}</p><span className="tile-arrow"><ArrowUpRight size={20} /></span></div></Link>)}</div></section>
+
+    <section className="season-section"><div className="site-shell season-grid"><div className="season-image-frame"><img src={mangoImage} alt="Fresh golden mangoes available through Nigerian food supply programmes" /><div className="image-tag"><span>From Nigeria</span><strong>Premium produce</strong></div></div><div className="season-copy"><div className="route-kicker route-kicker-light"><span /> Wholesale & retail</div><h2>Your trusted partner for African food supply.</h2><p>Whether you are a supermarket, African food retailer, restaurant, distributor, importer or wholesale buyer, Karossy Foods helps you source authentic Nigerian and African food products.</p><Link href="/export" className="text-button text-button-light">Explore export & wholesale <ArrowUpRight size={17} /></Link></div></div></section>
+
+    <section className="trace-section section-pad"><div className="site-shell trace-grid"><div className="trace-copy"><div className="route-kicker"><span /> How it works</div><h2>Good supply starts with a clear conversation.</h2><p>Tell us what you need, and we will help you explore suitable supply options around product, quantity, packaging and destination requirements.</p><ul className="check-list"><li><Check size={16} /> Tell us what you need</li><li><Check size={16} /> We source</li><li><Check size={16} /> Quote & confirm</li><li><Check size={16} /> Supply & delivery</li></ul><Link href="/contact" className="button button-outline">Request a wholesale quote <ArrowUpRight size={17} /></Link></div><div className="trace-image-wrap"><img src={traceImage} alt="Nigerian food sourcing at the agricultural source" /><div className="trace-card"><Sprout size={22} /><p>Quality starts close to the source.</p></div></div></div></section>
+
+    <section className="route-section"><div className="site-shell route-grid"><div className="route-visual" aria-hidden="true"><div className="map-arc arc-one" /><div className="map-arc arc-two" /><div className="route-point point-one" /><div className="route-point point-two" /><div className="route-point point-three" /><span className="route-origin">Nigeria</span><span className="route-destination">Your market</span></div><div><div className="route-kicker route-kicker-light"><span /> Ready when you are</div><h2>Ready to source<br />authentic African <em>foods?</em></h2><p>Tell us what products and quantities you need. Our team will help you explore suitable supply options.</p><Link href="/contact" className="button button-saffron">Request a quote <MoveUpRight size={17} /></Link></div></div></section><SiteFooter /></div>;
 }

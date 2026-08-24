@@ -93,3 +93,8 @@
 
 - [x] Reduce sticky header vertical padding while retaining readable navigation.
 - [x] Verify the compact header, then save a checkpoint.
+
+# Final Header Tightening Checklist
+
+- [x] Further reduce desktop sticky-header vertical spacing.
+- [x] Verify the refined compact header, then save a checkpoint.

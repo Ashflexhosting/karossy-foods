@@ -322,6 +322,12 @@
 - [x] Add a subtle responsive route label to non-homepage headers while keeping the homepage unchanged.
 - [x] Verify route-label accuracy and header balance on desktop and mobile, then save a checkpoint.
 
+# Header Route Label Reversal Checklist
+
+- [x] Restore the prior green inner-page header implementation without route labels.
+- [x] Verify that the homepage and inner-page headers match the pre-label version.
+- [x] Save the restored version and confirm the reversal.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

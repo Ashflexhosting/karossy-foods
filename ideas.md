@@ -60,3 +60,7 @@
 - Product-detail placeholders are composed as **Karossy export dossiers**: branded image fields, route captions and restrained pack-size framework labels avoid an administrative spreadsheet feel while retaining clear editorial guidance for future approved content.
 
 - The product index acts as a **Meridian Route**: a dashed left spine and saffron waypoints make each category a visible handover, while compact product apertures bring ingredient abundance into the discovery stage.
+
+- Product dossiers use a **full-width image-and-brief spread**: oversized category photography, generous editorial title space and two grouped commercial detail panels make each category feel like a considered sourcing opportunity rather than a compact card.
+
+- The full-width dossiers alternate paper, oat and botanical-tinted buyer briefs so their visual sequence feels like a curated sourcing journal instead of a repeated administrative template.

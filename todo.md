@@ -16,3 +16,9 @@
 - [x] Prepare category-specific product visuals for the full catalogue.
 - [x] Replace product-card photography placeholders and remove visible catalogue numbering.
 - [x] Verify the refreshed catalogue at desktop and mobile dimensions, then save a checkpoint.
+
+# Product Dossier Expansion Checklist
+
+- [x] Define larger category card proportions and a more spacious commercial-detail hierarchy.
+- [x] Implement the expanded visual and specification layout for all dossier cards.
+- [x] Verify the expanded dossiers at desktop and mobile dimensions, then save a checkpoint.

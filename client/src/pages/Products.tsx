@@ -6,6 +6,7 @@ import { ArrowUpRight, Check, Leaf, MessageCircle, PackageOpen, Route } from "lu
 import { Link } from "wouter";
 import { PageLead, SiteFooter, SiteHeader } from "@/components/SiteLayout";
 import "@/styles/catalogue-enhancement.css";
+import "@/styles/dossier-expansion.css";
 
 const botanicalImage = "/manus-storage/karossy-botanical-detail_d9ef6275.jpg";
 const mark = "/manus-storage/karossy-logomark_32223915.png";

@@ -1,5 +1,5 @@
 /* Meridian Pantry refinement: tactile discovery imagery and traceable route cues extend into the home and contact journeys. */
-.products-section { position:relative; overflow:hidden; color:#fff; background-color:#101413; background-image:radial-gradient(rgba(243,167,45,.13) .55px,transparent .72px),linear-gradient(135deg,#151b19 0%,#090b0b 100%); background-size:7px 7px,100% 100%; }.products-section .section-head h2 { color:#fff; }.products-section .section-head h2 em { color:#f3a72d; }.products-section .route-kicker { color:rgba(255,255,255,.72); }.products-section.home-route-stage::before { border-color:rgba(243,167,45,.48); }.products-section.home-route-stage::after { color:#f3a72d; }.products-section .button-forest { color:#153d35; background:#f3a72d; }.products-section .button-forest:hover { background:#fac057; }.products-section .product-tile { border:1px solid rgba(255,255,255,.13); }
+.products-section { position:relative; overflow:hidden; }
 /* Meridian Pantry refinement: every stage follows a visible sourcing route, while product imagery remains tactile, abundant and buyer-led. */
 .hero-headline-line { display:block; }
 @media (min-width:901px) { .home-page .hero-copy { width:min(880px,68%); }.home-page .hero h1 { max-width:none; font-size:clamp(56px,5.3vw,82px); }.home-page .hero-headline-line { white-space:nowrap; } }

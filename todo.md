@@ -334,6 +334,12 @@
 - [x] Apply the lighter overlay across desktop and mobile homepage hero treatments.
 - [x] Verify image visibility and copy contrast, then save a checkpoint.
 
+# Product Selection Background Reversal Checklist
+
+- [x] Restore the prior light background and light heading treatment for the homepage Product Selection section.
+- [x] Retain readable product cards, category links, and responsive layout behavior.
+- [x] Verify the restored section at desktop and mobile dimensions, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

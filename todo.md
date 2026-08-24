@@ -224,7 +224,7 @@
 
 - [x] Review the campaign selector and define a stronger selected state with preview interactions.
 - [x] Implement campaign-preview popups and clearer active campaign color treatment.
-- [ ] Verify the selector across desktop and mobile, then refresh the GitHub Pages deployment.
+- [x] Superseded by the popup-free immediate campaign-switching update and its refreshed GitHub Pages source branch.
 
 # Immediate Campaign Switching Checklist
 

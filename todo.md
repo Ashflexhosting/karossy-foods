@@ -121,3 +121,9 @@
 
 - [x] Strengthen banner text contrast and vary image-led hero composition by page context.
 - [x] Add a compact Meridian route seal to each image-led inner-page banner.
+
+# Product & Seasonal Banner Checklist
+
+- [x] Define product-specific category banner treatments and reusable seasonal campaign variants for new harvest, festive table, and wholesale planning campaigns.
+- [x] Implement the enhanced category-detail banners and seasonal campaign switch system.
+- [x] Verify category and seasonal banner variants at desktop and mobile sizes, then save a checkpoint.

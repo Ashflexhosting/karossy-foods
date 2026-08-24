@@ -158,3 +158,9 @@
 - [x] Upload the supplied grocery-shopping image for durable website use and locate the Our Purpose media reference.
 - [x] Replace the About page Our Purpose image with the supplied photograph.
 - [x] Verify the image treatment at desktop and mobile sizes, then save a checkpoint.
+
+# Contact Information Update Checklist
+
+- [x] Extract and verify the supplied Lagos address and both phone numbers.
+- [x] Update the contact page, shared footer, mobile quick-contact panel, and wholesale enquiry links.
+- [x] Verify all contact links and layouts, then save a checkpoint.

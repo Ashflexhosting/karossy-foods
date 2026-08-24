@@ -291,3 +291,15 @@
 - [x] Review the existing hero wash and define a black overlay that maintains readability and image presence.
 - [x] Apply the black overlay across desktop and mobile hero treatments.
 - [x] Verify the updated hero at desktop and mobile dimensions, then save a checkpoint.
+
+# Sitewide Black Overlay & Hero Grain Checklist
+
+- [x] Audit image-led green wash treatments and identify the sections that need consistent black overlays.
+- [x] Apply full-hero black coverage with subtle grain and replace selected green image washes with black overlays.
+- [x] Verify contrast and imagery across desktop and mobile, then save a checkpoint.
+
+# Full-Hero Overlay & Grain Texture Checklist
+
+- [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.
+- [ ] Apply the full-bleed overlay and grain effect across desktop and mobile hero layouts.
+- [ ] Verify image presence, overlay consistency, and copy contrast, then save a checkpoint.

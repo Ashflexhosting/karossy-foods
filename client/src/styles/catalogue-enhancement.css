@@ -9,8 +9,8 @@
 .product-index-route i:nth-of-type(1) { top:7%; }.product-index-route i:nth-of-type(2) { top:21%; }.product-index-route i:nth-of-type(3) { top:35%; }.product-index-route i:nth-of-type(4) { top:49%; }.product-index-route i:nth-of-type(5) { top:63%; }.product-index-route i:nth-of-type(6) { top:77%; }.product-index-route i:nth-of-type(7) { bottom:4%; }
 .assortment-row { grid-template-columns:100px 1.25fr .72fr 56px; min-height:182px; padding:21px 12px; }
 .assortment-number,.photo-slot-index { display:none; }
-.product-index-visual { position:relative; width:76px; height:116px; overflow:hidden; border-radius:40px 40px 5px 5px; background:#153d35; }
-.product-index-visual::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 33%,rgba(7,31,26,.78)); }
+.product-index-visual { position:relative; width:76px; height:116px; overflow:hidden; border-radius:40px 40px 5px 5px; background:#080909; }
+.product-index-visual::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 33%,rgba(0,0,0,.78)); }
 .product-index-visual > img { display:block; width:100%; height:100%; object-fit:cover; }
 .product-index-visual span { position:absolute; z-index:1; left:8px; right:8px; bottom:9px; display:flex; align-items:center; gap:4px; color:#fff; font-size:7px; font-weight:800; letter-spacing:.06em; line-height:1.2; text-transform:uppercase; }
 .product-index-visual span img { width:14px; height:14px; object-fit:contain; }
@@ -18,16 +18,16 @@
 .category-detail-card:nth-child(even) .category-photo-placeholder { order:2; }
 .category-detail-card:nth-child(3n) .category-photo-placeholder::after { width:250px; height:130px; border-radius:48% 52% 41% 59%; transform:rotate(-28deg); }
 .category-detail-card:nth-child(3n + 2) .category-photo-placeholder::before { border-radius:67% 33% 61% 39%; }
-.category-photo-placeholder { display:block; padding:0; background:#153d35; color:#f5f1e8; }
+.category-photo-placeholder { display:block; padding:0; background:#080909; color:#f5f1e8; }
 .category-photo-placeholder::before { z-index:2; inset:17px; border-color:rgba(243,167,45,.72); }
-.category-photo-placeholder::after { z-index:1; background:rgba(21,61,53,.18); }
+.category-photo-placeholder::after { z-index:1; background:rgba(0,0,0,.18); }
 .category-photo-placeholder > img:first-child { position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; filter:saturate(.9) contrast(1.03); }
-.category-photo-placeholder > img:first-child + .photo-placeholder-top::before { content:""; position:absolute; z-index:-1; inset:-20px -25px -20px -25px; background:linear-gradient(180deg,rgba(11,35,30,.75),rgba(11,35,30,.08)); }
+.category-photo-placeholder > img:first-child + .photo-placeholder-top::before { content:""; position:absolute; z-index:-1; inset:-20px -25px -20px -25px; background:linear-gradient(180deg,rgba(0,0,0,.72),rgba(0,0,0,.06)); }
 .photo-placeholder-top { position:absolute; z-index:3; top:24px; left:24px; display:flex; align-items:center; gap:9px; }
 .photo-placeholder-top img { width:34px; height:34px; object-fit:contain; }
 .photo-placeholder-top span,.photo-route-caption { font-size:9px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
 .photo-placeholder-main { position:absolute; z-index:3; left:25px; right:25px; bottom:56px; display:flex; flex-direction:column; align-items:flex-start; }
-.photo-placeholder-main::before { content:""; position:absolute; z-index:-1; inset:-28px -25px -46px; background:linear-gradient(180deg,transparent,rgba(7,31,26,.88)); }
+.photo-placeholder-main::before { content:""; position:absolute; z-index:-1; inset:-28px -25px -46px; background:linear-gradient(180deg,transparent,rgba(0,0,0,.86)); }
 .category-photo-placeholder strong { max-width:205px; margin:0; color:#fff; font-size:29px; text-shadow:0 1px 8px rgba(0,0,0,.28); }
 .category-photo-placeholder small { max-width:195px; margin-top:9px; color:rgba(255,255,255,.84); font-size:11px; opacity:1; }
 .photo-route-caption { position:absolute; z-index:3; left:25px; bottom:22px; display:flex; align-items:center; gap:7px; color:#fff; }

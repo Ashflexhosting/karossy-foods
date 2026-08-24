@@ -279,3 +279,9 @@
 - [x] Map each homepage product card to its specific category detail route and define a full-width second-row treatment.
 - [x] Remove visible card numbering, improve product-card content readability, and add direct category links.
 - [x] Verify the revised card layout and navigation at desktop, tablet, and mobile dimensions, then save a checkpoint.
+
+# Homepage About-Section Image Checklist
+
+- [x] Select a real existing sourcing image that reinforces the homepage About Karossy Foods message.
+- [x] Add the image as an editorial left-side composition with accessible alternative text.
+- [x] Verify the homepage About section at desktop and mobile dimensions, then save a checkpoint.

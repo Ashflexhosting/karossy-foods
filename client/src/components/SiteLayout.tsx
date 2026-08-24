@@ -2,24 +2,25 @@
  * Meridian Pantry design system: Canopy Green, harvest saffron, and a visible route-spine
  * create the premium Nigerian food-export identity used across Karossy Foods pages.
  */
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, Building2, House, Images, Menu, Package, ShieldCheck, Ship, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import "@/styles/shared-logo.css";
 import "@/styles/sticky-header.css";
+import "@/styles/mobile-nav-icons.css";
 
 const mark = "/manus-storage/karossy-logomark_32223915.png";
 const logo = "/manus-storage/karossy-foods-logo_dbfe97cf.png";
 const monogram = "/manus-storage/karossy-favicon-leaf-s_84ebb102.png";
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Our Products", href: "/products" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Export & Wholesale", href: "/export" },
-  { label: "Quality & Sourcing", href: "/quality" },
+  { label: "Home", href: "/", icon: House },
+  { label: "About Us", href: "/about", icon: Building2 },
+  { label: "Our Products", href: "/products", icon: Package },
+  { label: "Gallery", href: "/gallery", icon: Images },
+  { label: "Export & Wholesale", href: "/export", icon: Ship },
+  { label: "Quality & Sourcing", href: "/quality", icon: ShieldCheck },
 ];
 
 export function BrandMark({ light = false }: { light?: boolean }) {
@@ -37,7 +38,7 @@ export function SiteHeader({ inverse = false }: { inverse?: boolean }) {
       <Link href="/contact" className={inverse ? "header-cta header-cta-inverse" : "header-cta"}>Request a quote <ArrowUpRight size={15} strokeWidth={2.2} /></Link>
       <button type="button" className="mobile-menu-toggle" onClick={() => setOpen((value) => !value)} aria-expanded={open} aria-label={open ? "Close navigation" : "Open navigation"}>{open ? <X size={23} /> : <Menu size={23} />}</button>
     </div>
-    {open && <div className="mobile-menu"><div className="site-shell mobile-menu-inner">{navItems.map((item, index) => <Link key={item.href} href={item.href} className={location === item.href ? "mobile-nav-link mobile-nav-active" : "mobile-nav-link"} style={{ transitionDelay: `${index * 45}ms` }}><span>0{index + 1}</span>{item.label}</Link>)}<Link href="/contact" className="button button-saffron mobile-enquiry">Request a wholesale quote <ArrowUpRight size={17} /></Link></div></div>}
+    {open && <div className="mobile-menu"><div className="site-shell mobile-menu-inner">{navItems.map((item, index) => { const Icon = item.icon; return <Link key={item.href} href={item.href} className={location === item.href ? "mobile-nav-link mobile-nav-active" : "mobile-nav-link"} style={{ transitionDelay: `${index * 45}ms` }}><span className="mobile-nav-icon"><Icon size={17} strokeWidth={1.9} /></span>{item.label}</Link>; })}<Link href="/contact" className="button button-saffron mobile-enquiry">Request a wholesale quote <ArrowUpRight size={17} /></Link></div></div>}
   </header>;
 }
 

@@ -60,3 +60,9 @@
 - [x] Define sticky header scroll behavior and gallery content groups.
 - [x] Build the sticky navigation and the dedicated Gallery page.
 - [x] Verify the gallery journey and sticky header at desktop and mobile sizes, then save a checkpoint.
+
+# Mobile Navigation Icon Checklist
+
+- [x] Assign matching icons to each mobile navigation item: home, company, products, gallery, export route, and quality.
+- [x] Replace numbered dropdown markers with the assigned icons.
+- [x] Verify the mobile dropdown, then save a checkpoint.

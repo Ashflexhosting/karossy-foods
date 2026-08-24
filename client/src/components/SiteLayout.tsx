@@ -29,6 +29,7 @@ const navItems = [
   { label: "Gallery", href: "/gallery", icon: Images, hint: "See products & sourcing" },
   { label: "Export & Wholesale", href: "/export", icon: Ship, hint: "Plan your supply route" },
   { label: "Quality & Sourcing", href: "/quality", icon: ShieldCheck, hint: "Our sourcing approach" },
+  { label: "Contact", href: "/contact", icon: Mail, hint: "Contact the export desk" },
 ];
 
 export function BrandMark({ light = false }: { light?: boolean }) {

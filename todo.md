@@ -182,3 +182,9 @@
 - [x] Identify the styling that leaves the active-route status bar visible without its label.
 - [x] Remove the stray indicator while preserving a clear active mobile menu treatment.
 - [x] Verify the corrected mobile menu, then save a checkpoint.
+
+# Primary Navigation Contact Link Checklist
+
+- [x] Review desktop and mobile primary navigation capacity for an additional Contact link.
+- [x] Add Contact to the shared primary navigation with its matching icon and active-route state.
+- [x] Verify the desktop and mobile navigation update, then save a checkpoint.

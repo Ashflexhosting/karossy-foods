@@ -273,3 +273,9 @@
 - [x] Review the existing homepage product rail and define a balanced two-row desktop arrangement.
 - [x] Implement the two-row product-card layout while retaining responsive tablet and mobile reading order.
 - [x] Verify the homepage product section at desktop, tablet, and mobile dimensions, then save a checkpoint.
+
+# Homepage Product-Card Link & Readability Checklist
+
+- [x] Map each homepage product card to its specific category detail route and define a full-width second-row treatment.
+- [x] Remove visible card numbering, improve product-card content readability, and add direct category links.
+- [x] Verify the revised card layout and navigation at desktop, tablet, and mobile dimensions, then save a checkpoint.

@@ -133,3 +133,10 @@
 - [x] Audit repetitive decorative patterns, typography scale, and component density across the shared experience.
 - [x] Refine shared structure and core page patterns toward a more credible production template.
 - [x] Verify the revised visual system at desktop and mobile sizes, then save a checkpoint.
+
+# Approved Product Sheet Integration Checklist
+
+- [x] Extract and validate the approved Ijebu Garri, Palm Oil, and Kilishi specifications. The Palm Oil label’s usage tips conflict with its own product description, so only its clearly applicable cooking-use description will be published.
+- [x] Upload the supplied product-sheet artwork for durable website use.
+- [x] Replace the corresponding category-page placeholders with approved product details and artwork.
+- [x] Verify the enriched product pages at desktop and mobile sizes, then save a checkpoint.

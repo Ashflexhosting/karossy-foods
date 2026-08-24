@@ -10,3 +10,9 @@
 - [x] Define the photography placeholder label and editable pack-size fields for each approved category.
 - [x] Add detailed category cards with photography placeholders and pack-size specification blocks to the product page.
 - [x] Verify the enhanced catalogue at desktop and mobile dimensions, then save a checkpoint.
+
+# Image-Led Catalogue Refresh Checklist
+
+- [x] Prepare category-specific product visuals for the full catalogue.
+- [x] Replace product-card photography placeholders and remove visible catalogue numbering.
+- [x] Verify the refreshed catalogue at desktop and mobile dimensions, then save a checkpoint.

@@ -58,3 +58,5 @@
 - The Karossy mark is treated as a botanical forward-route monogram and recurs as a seal or waypoint where appropriate.
 
 - Product-detail placeholders are composed as **Karossy export dossiers**: branded image fields, route captions and restrained pack-size framework labels avoid an administrative spreadsheet feel while retaining clear editorial guidance for future approved content.
+
+- The product index acts as a **Meridian Route**: a dashed left spine and saffron waypoints make each category a visible handover, while compact product apertures bring ingredient abundance into the discovery stage.

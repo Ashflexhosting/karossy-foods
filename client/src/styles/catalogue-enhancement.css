@@ -1,23 +1,51 @@
-/* Meridian Pantry product dossiers: botanical route seals, varied export fields, and non-generic information rhythm. */
+/* Meridian Pantry category cards: visible meridian handovers, sensory product imagery, and premium buyer-brief detail. */
+.brand-mark { width:42px; height:42px; }
+.brand-lockup { gap:12px; }
+.assortment-section { position:relative; }
+.product-index-shell { position:relative; padding-left:86px; }
+.product-index-route { position:absolute; left:26px; top:0; bottom:0; width:1px; border-left:1px dashed rgba(21,61,53,.44); }
+.product-index-route .route-label { position:absolute; top:-7px; left:-15px; width:1px; color:#b79868; font-size:9px; font-weight:800; letter-spacing:.12em; line-height:1; text-transform:uppercase; white-space:nowrap; writing-mode:vertical-rl; transform:rotate(180deg); }
+.product-index-route i { position:absolute; left:-6px; width:11px; height:11px; border:2px solid #f5f1e8; border-radius:50%; background:#f3a72d; box-shadow:0 0 0 1px rgba(21,61,53,.35); }
+.product-index-route i:nth-of-type(1) { top:7%; }.product-index-route i:nth-of-type(2) { top:21%; }.product-index-route i:nth-of-type(3) { top:35%; }.product-index-route i:nth-of-type(4) { top:49%; }.product-index-route i:nth-of-type(5) { top:63%; }.product-index-route i:nth-of-type(6) { top:77%; }.product-index-route i:nth-of-type(7) { bottom:4%; }
+.assortment-row { grid-template-columns:100px 1.25fr .72fr 56px; min-height:182px; padding:21px 12px; }
+.assortment-number,.photo-slot-index { display:none; }
+.product-index-visual { position:relative; width:76px; height:116px; overflow:hidden; border-radius:40px 40px 5px 5px; background:#153d35; }
+.product-index-visual::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 33%,rgba(7,31,26,.78)); }
+.product-index-visual > img { display:block; width:100%; height:100%; object-fit:cover; }
+.product-index-visual span { position:absolute; z-index:1; left:8px; right:8px; bottom:9px; display:flex; align-items:center; gap:4px; color:#fff; font-size:7px; font-weight:800; letter-spacing:.06em; line-height:1.2; text-transform:uppercase; }
+.product-index-visual span img { width:14px; height:14px; object-fit:contain; }
 .category-detail-card:nth-child(even) { grid-template-columns:1.24fr .76fr; }
 .category-detail-card:nth-child(even) .category-photo-placeholder { order:2; }
 .category-detail-card:nth-child(3n) .category-photo-placeholder::after { width:250px; height:130px; border-radius:48% 52% 41% 59%; transform:rotate(-28deg); }
 .category-detail-card:nth-child(3n + 2) .category-photo-placeholder::before { border-radius:67% 33% 61% 39%; }
-.category-photo-placeholder { gap:0; justify-content:space-between; }
-.photo-placeholder-top { position:relative; z-index:1; display:flex; align-items:center; gap:9px; }
-.photo-placeholder-top img { width:32px; height:32px; object-fit:contain; }
+.category-photo-placeholder { display:block; padding:0; background:#153d35; color:#f5f1e8; }
+.category-photo-placeholder::before { z-index:2; inset:17px; border-color:rgba(243,167,45,.72); }
+.category-photo-placeholder::after { z-index:1; background:rgba(21,61,53,.18); }
+.category-photo-placeholder > img:first-child { position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; filter:saturate(.9) contrast(1.03); }
+.category-photo-placeholder > img:first-child + .photo-placeholder-top::before { content:""; position:absolute; z-index:-1; inset:-20px -25px -20px -25px; background:linear-gradient(180deg,rgba(11,35,30,.75),rgba(11,35,30,.08)); }
+.photo-placeholder-top { position:absolute; z-index:3; top:24px; left:24px; display:flex; align-items:center; gap:9px; }
+.photo-placeholder-top img { width:34px; height:34px; object-fit:contain; }
 .photo-placeholder-top span,.photo-route-caption { font-size:9px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
-.photo-placeholder-main { position:relative; z-index:1; display:flex; flex-direction:column; align-items:flex-start; }
-.category-photo-placeholder strong { max-width:205px; margin-top:16px; }
-.category-photo-placeholder small { max-width:195px; }
-.photo-route-caption { position:relative; z-index:1; display:flex; align-items:center; gap:7px; color:inherit; opacity:.78; }
+.photo-placeholder-main { position:absolute; z-index:3; left:25px; right:25px; bottom:56px; display:flex; flex-direction:column; align-items:flex-start; }
+.photo-placeholder-main::before { content:""; position:absolute; z-index:-1; inset:-28px -25px -46px; background:linear-gradient(180deg,transparent,rgba(7,31,26,.88)); }
+.category-photo-placeholder strong { max-width:205px; margin:0; color:#fff; font-size:29px; text-shadow:0 1px 8px rgba(0,0,0,.28); }
+.category-photo-placeholder small { max-width:195px; margin-top:9px; color:rgba(255,255,255,.84); font-size:11px; opacity:1; }
+.photo-route-caption { position:absolute; z-index:3; left:25px; bottom:22px; display:flex; align-items:center; gap:7px; color:#fff; }
 .category-dossier-line { display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .category-dossier-line span { color:#b79868; font-size:9px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
-.category-dossier-line img { width:25px; height:25px; object-fit:contain; }
+.category-dossier-line img { width:28px; height:28px; object-fit:contain; }
 .category-card-header h3 { margin-top:12px; }
+.pack-specs { padding:12px 0 2px; }
+.pack-spec-title { padding-bottom:12px; }
 .pack-spec-title em { color:#d27825; }
-.pack-specs dd { color:#21564b; }
-.pack-specs dl>div:nth-child(3n) { background:linear-gradient(90deg,rgba(243,167,45,.11),transparent); }
+.pack-spec-groups { display:grid; grid-template-columns:1fr 1fr; gap:13px; }
+.pack-spec-group { padding:10px; border:1px solid rgba(21,61,53,.1); background:rgba(255,255,255,.3); }
+.pack-spec-group>span { display:block; margin-bottom:6px; color:#b79868; font-size:8px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+.pack-specs dl { display:block; margin:0; }
+.pack-specs dl>div { display:grid; gap:3px; padding:7px 0; border-bottom:1px solid rgba(21,61,53,.1); }
+.pack-specs dl>div:last-child { border-bottom:0; }
+.pack-specs dt { font-size:8px; }.pack-specs dd { color:#21564b; font-size:10px; }
 .category-detail-card:nth-child(even) .category-specs { background:rgba(245,241,232,.7); }
-@media (max-width:900px) { .category-detail-card:nth-child(even) { grid-template-columns:.52fr 1.48fr; }.category-detail-card:nth-child(even) .category-photo-placeholder { order:2; } }
-@media (max-width:680px) { .category-detail-card:nth-child(even) { grid-template-columns:1fr; }.category-detail-card:nth-child(even) .category-photo-placeholder { order:0; }.photo-placeholder-main { margin-top:24px; }.category-photo-placeholder strong { margin-top:12px; }.photo-route-caption { margin-top:22px; } }
+.category-actions .button { padding-right:11px; padding-left:11px; }
+@media (max-width:900px) { .product-index-shell { padding-left:65px; }.product-index-route { left:21px; }.assortment-row { grid-template-columns:84px 1.1fr .8fr 48px; }.category-detail-card:nth-child(even) { grid-template-columns:.52fr 1.48fr; }.category-detail-card:nth-child(even) .category-photo-placeholder { order:2; }.pack-spec-groups { gap:8px; }.pack-spec-group { padding:8px; } }
+@media (max-width:680px) { .brand-mark { width:37px; height:37px; }.product-index-shell { padding-left:0; }.product-index-route { display:none; }.assortment-row { grid-template-columns:72px 1fr 42px; gap:12px; min-height:128px; }.assortment-row ul { display:none; }.product-index-visual { width:60px; height:88px; }.product-index-visual span { font-size:6px; }.assortment-heading h2 { font-size:27px; }.round-link { grid-row:auto; grid-column:auto; }.category-detail-card:nth-child(even) { grid-template-columns:1fr; }.category-detail-card:nth-child(even) .category-photo-placeholder { order:0; }.category-photo-placeholder { min-height:285px; }.photo-placeholder-top { top:22px; left:22px; }.photo-placeholder-main { left:22px; right:22px; bottom:55px; }.photo-route-caption { left:22px; bottom:22px; }.category-photo-placeholder strong { font-size:27px; }.pack-spec-groups { grid-template-columns:1fr; }.pack-spec-group { display:grid; grid-template-columns:105px 1fr; gap:12px; }.pack-spec-group>span { margin:3px 0 0; }.pack-spec-group dl { display:grid; grid-template-columns:1fr 1fr; gap:0 8px; } }

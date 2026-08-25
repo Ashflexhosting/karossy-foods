@@ -83,9 +83,9 @@ export default function Home() {
         <main>
           <section className="hero site-shell">
             <div className="hero-copy">
-              <div className="eyebrow eyebrow-light"><span className="pulse-dot" /> Nigerian ingredients for global buyers</div>
-              <h1><span className="hero-headline-line">Nigerian ingredients.</span><em className="hero-headline-line">Built for your market.</em></h1>
-              <p>Karossy Foods helps retail, wholesale and food-service buyers source Nigerian and African products around the right mix, quantities and destination requirements.</p>
+              <div className="eyebrow eyebrow-light"><span className="pulse-dot" /> Nigerian - African food exporters</div>
+              <h1><span className="hero-headline-line">Premium African Foods,</span><em className="hero-headline-line">Sourced from Nigeria.</em></h1>
+              <p>From Nigeria to the World — Authentic African Foods, Carefully Sourced and Reliably Supplied.</p>
               <div className="hero-actions"><Link href="/products" className="button button-saffron">View product categories <ArrowUpRight size={18} /></Link><Link href="/contact" className="text-button text-button-light">Start a sourcing brief <ArrowDown size={17} /></Link></div>
               <div className="hero-product-focus" aria-live="polite"><span>Product focus</span><div className="hero-product-focus-copy" key={focus.name}><strong>{focus.name}</strong><p>{focus.copy}</p></div></div>
             </div>

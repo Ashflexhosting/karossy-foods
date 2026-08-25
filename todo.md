@@ -387,6 +387,12 @@
 - [x] Replace legacy icon usage with the approved green-and-gold mark while preserving layout and accessible text.
 - [x] Verify the replacement across shared components and key pages, then save a checkpoint.
 
+# Product Selection Headline Edit Checklist
+
+- [x] Locate the current Product Selection headline after the failed visual-editor edit.
+- [x] Replace the headline with “Premium African food, selected for your market.” while preserving its editorial line treatment.
+- [x] Verify the wording at desktop and mobile sizes, then save a checkpoint.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

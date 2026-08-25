@@ -404,3 +404,9 @@
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.
 - [ ] Apply the full-bleed overlay and grain effect across desktop and mobile hero layouts.
 - [ ] Verify image presence, overlay consistency, and copy contrast, then save a checkpoint.
+
+# Homepage Hero and Kilishi Copy Verification Checklist
+
+- [x] Confirm the requested homepage hero wording is already present after the visual-editor lookup failure.
+- [x] Locate and apply the approved Kilishi product description where the visual editor could not find its target.
+- [x] Verify the revised product copy and hero presentation, then save a checkpoint.

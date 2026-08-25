@@ -393,6 +393,12 @@
 - [x] Replace the headline with “Premium African food, selected for your market.” while preserving its editorial line treatment.
 - [x] Verify the wording at desktop and mobile sizes, then save a checkpoint.
 
+# Homepage Snail Product-Range Copy Checklist
+
+- [x] Confirm the homepage product-range description includes snails in the approved list.
+- [x] Verify the revised paragraph remains readable and naturally wraps at desktop and mobile sizes.
+- [x] Save the verified copy update and report completion.
+
 # Full-Hero Overlay & Grain Texture Checklist
 
 - [ ] Define an even full-hero black overlay and an unobtrusive editorial grain treatment.

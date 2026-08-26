@@ -440,3 +440,9 @@
 - [x] Inspect the applied homepage spacing edits and identify any duplicated inline styling.
 - [x] Preserve the requested 130px About-section top padding and 35px Product Selection bottom spacing through clean targeted rules.
 - [x] Investigate the unavailable FoodPages target, verify the refined homepage at desktop and mobile sizes, then save a checkpoint.
+
+# Primary Navigation 16px Typography Checklist
+
+- [x] Review the current primary-navigation typography and responsive breakpoints.
+- [x] Set desktop primary-menu labels to 16px while preserving header balance.
+- [x] Verify the header at desktop and mobile sizes, then save a checkpoint.

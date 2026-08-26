@@ -446,3 +446,9 @@
 - [x] Review the current primary-navigation typography and responsive breakpoints.
 - [x] Set desktop primary-menu labels to 16px while preserving header balance.
 - [x] Verify the header at desktop and mobile sizes, then save a checkpoint.
+
+# Reference-Aligned Primary Menu Checklist
+
+- [x] Inspect the supplied navigation reference and map its scale, weight, and spacing to the Karossy header.
+- [x] Apply the refined large-menu treatment while preserving responsive navigation behaviour.
+- [x] Verify reference-aligned menu balance at desktop and mobile sizes, then save a checkpoint.

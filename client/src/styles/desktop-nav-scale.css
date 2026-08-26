@@ -1,4 +1,4 @@
-/* Meridian Pantry desktop navigation: a readable 16px desktop label scale preserves the calm editorial rhythm while narrowing progressively before mobile navigation takes over. */
-@media (min-width:901px) { .site-header,.site-header-inverse { padding:7px 0; }.site-header .header-inner,.site-header-inverse .header-inner { min-height:52px; }.desktop-nav { gap:14px; }.nav-link { padding:8px 0; font-size:12px; letter-spacing:.04em; }.header-cta { padding:11px 16px; font-size:13px; } }
-@media (min-width:1100px) { .desktop-nav { gap:17px; }.nav-link { font-size:14px; letter-spacing:.035em; }.header-cta { padding:11px 17px; } }
-@media (min-width:1200px) { .desktop-nav { gap:18px; }.nav-link { font-size:16px; letter-spacing:.022em; }.header-cta { padding:11px 18px; } }
+/* Meridian Pantry desktop navigation: reference-led label scale is open and prominent, then narrows progressively before mobile navigation takes over. */
+@media (min-width:901px) { .site-header,.site-header-inverse { padding:7px 0; }.site-header .header-inner,.site-header-inverse .header-inner { min-height:52px; }.desktop-nav { gap:14px; }.nav-link { padding:8px 0; font-size:13px; font-weight:700; letter-spacing:.03em; }.header-cta { padding:11px 16px; font-size:13px; } }
+@media (min-width:1100px) { .desktop-nav { gap:17px; }.nav-link { font-size:16px; letter-spacing:.022em; }.header-cta { padding:11px 17px; } }
+@media (min-width:1200px) { .desktop-nav { gap:18px; }.nav-link { font-size:18px; letter-spacing:.012em; }.header-cta { padding:11px 18px; } }

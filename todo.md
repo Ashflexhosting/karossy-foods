@@ -422,3 +422,9 @@
 - [x] Prepare the supplied Karossy Foods wordmark for managed website delivery.
 - [x] Replace the active shared logo while preserving the separate green-and-gold favicon mark.
 - [x] Verify desktop and mobile branding presentation, then save a checkpoint.
+
+# Enlarged Shared Wordmark Verification Checklist
+
+- [x] Confirm the user-applied 144px × 60px shared-wordmark sizing is present in the shared brand component.
+- [x] Verify the expanded wordmark preserves header navigation and footer balance at desktop and mobile sizes.
+- [x] Save the verified sizing update and report completion.

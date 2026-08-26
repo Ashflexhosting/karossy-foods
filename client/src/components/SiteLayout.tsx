@@ -32,7 +32,7 @@ const navItems = [
 ];
 
 export function BrandMark({ light = false }: { light?: boolean }) {
-  return <div className={light ? "brand-lockup brand-lockup-logo brand-lockup-logo-light" : "brand-lockup brand-lockup-logo"} aria-label="Karossy Foods Limited"><img src={logo} alt="Karossy Foods" className="brand-logo" /></div>;
+  return <div className={light ? "brand-lockup brand-lockup-logo brand-lockup-logo-light" : "brand-lockup brand-lockup-logo"} aria-label="Karossy Foods Limited" style={{height: '60px', width: '144px'}}><img src={logo} alt="Karossy Foods" className="brand-logo" style={{height: '60px', width: '144px'}} /></div>;
 }
 
 type BreadcrumbItem = { label: string; href?: string };

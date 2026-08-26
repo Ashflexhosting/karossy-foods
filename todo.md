@@ -434,3 +434,9 @@
 - [x] Define a top-divider treatment that reinforces the Meridian Pantry sourcing-route aesthetic.
 - [x] Add the divider to the top of the homepage Product Selection section with responsive behaviour.
 - [x] Verify the divider at desktop and mobile sizes, then save a checkpoint.
+
+# Homepage Spacing Edit Normalization Checklist
+
+- [x] Inspect the applied homepage spacing edits and identify any duplicated inline styling.
+- [x] Preserve the requested 130px About-section top padding and 35px Product Selection bottom spacing through clean targeted rules.
+- [x] Investigate the unavailable FoodPages target, verify the refined homepage at desktop and mobile sizes, then save a checkpoint.

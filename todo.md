@@ -428,3 +428,9 @@
 - [x] Confirm the user-applied 144px × 60px shared-wordmark sizing is present in the shared brand component.
 - [x] Verify the expanded wordmark preserves header navigation and footer balance at desktop and mobile sizes.
 - [x] Save the verified sizing update and report completion.
+
+# Product Selection Editorial Divider Checklist
+
+- [x] Define a top-divider treatment that reinforces the Meridian Pantry sourcing-route aesthetic.
+- [x] Add the divider to the top of the homepage Product Selection section with responsive behaviour.
+- [x] Verify the divider at desktop and mobile sizes, then save a checkpoint.

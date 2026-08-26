@@ -416,3 +416,9 @@
 - [x] Review each remaining catalogue summary against the requested trade-focused product voice.
 - [x] Update the remaining summaries with specific buyer-use and sourcing context without adding unapproved commercial claims.
 - [x] Verify catalogue and product-detail readability at desktop and mobile sizes, then save a checkpoint.
+
+# Supplied Wordmark Replacement Checklist
+
+- [x] Prepare the supplied Karossy Foods wordmark for managed website delivery.
+- [x] Replace the active shared logo while preserving the separate green-and-gold favicon mark.
+- [x] Verify desktop and mobile branding presentation, then save a checkpoint.

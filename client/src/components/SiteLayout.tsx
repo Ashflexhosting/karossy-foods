@@ -18,7 +18,7 @@ import "@/styles/production-template-refinement.css";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { contactDetails, whatsappEnquiryUrl } from "@/lib/contactDetails";
 
-const logo = "/manus-storage/karossy-foods-logo_dbfe97cf.png";
+const logo = "/manus-storage/karossy-foods-wordmark-green-gold_6144b566.png";
 const monogram = "/manus-storage/karossy-glossy-leaf-s-favicon_68b5b543.png";
 
 const navItems = [
@@ -32,7 +32,7 @@ const navItems = [
 ];
 
 export function BrandMark({ light = false }: { light?: boolean }) {
-  return <div className={light ? "brand-lockup brand-lockup-logo brand-lockup-logo-light" : "brand-lockup brand-lockup-logo"} aria-label="Karossy Foods Limited"><span className="brand-route-seal" aria-hidden="true"><img src={monogram} alt="" className="brand-monogram" /></span><img src={logo} alt="Karossy Foods" className="brand-logo" /></div>;
+  return <div className={light ? "brand-lockup brand-lockup-logo brand-lockup-logo-light" : "brand-lockup brand-lockup-logo"} aria-label="Karossy Foods Limited"><img src={logo} alt="Karossy Foods" className="brand-logo" /></div>;
 }
 
 type BreadcrumbItem = { label: string; href?: string };

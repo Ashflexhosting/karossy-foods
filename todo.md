@@ -463,4 +463,4 @@
 
 - [x] Create a feature branch from the synchronized Karossy Foods source and open a pull request.
 - [x] Run the production build plus link and style validation checks.
-- [ ] Review the deployed live site and report the pull-request and verification results.
+- [x] Review the deployed live site and report the pull-request and verification results.

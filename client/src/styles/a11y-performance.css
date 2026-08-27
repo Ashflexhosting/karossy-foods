@@ -1,0 +1,62 @@
+/* Meridian Pantry accessibility tuning: preserve the Canopy Green, oat, and saffron system while strengthening low-emphasis text on light surfaces. */
+.route-loading {
+  min-height: 28vh;
+  display: grid;
+  place-items: center;
+  color: #31564b;
+  background: #f5f1e8;
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.route-kicker:not(.route-kicker-light),
+.contact-label,
+.form-privacy,
+.principle-stage,
+.pack-specs dt,
+.office-hours dt,
+.export-market-guidance-docket-head strong {
+  color: #31564b !important;
+}
+
+.home-route-stage::after,
+.principle-no,
+.export-market-guidance-docket-head span {
+  color: #785b20 !important;
+}
+
+.origin-copy h2 em,
+.principles-section h2 em,
+.brief-card h2 em,
+.section-head h2 em,
+.export-market-guidance-copy h2 em,
+.office-location-copy h2 em,
+.export-briefing-copy h2 em,
+.quality-redesign-section h2 em,
+.detail-spec-card h3 em,
+.category-detail-card h3 em {
+  color: #9c5100 !important;
+}
+
+.hero h1 em,
+.page-lead-image h1 em,
+.contact-top h1 em,
+.season-copy h2 em,
+.seasonal-campaign h2 em,
+.gallery-source-section h2 em,
+.quality-redesign-hero h1 em,
+.export-redesign-hero h1 em,
+.category-detail-hero h1 em {
+  color: #f3a72d !important;
+}
+
+.route-kicker:not(.route-kicker-light) > span,
+.route-kicker:not(.route-kicker-light) > span::before {
+  background-color: #a55c00;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-loading { transition: none; }
+}

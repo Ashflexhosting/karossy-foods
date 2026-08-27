@@ -203,11 +203,9 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
-
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   base: process.env.VITE_DEPLOY_TARGET === "github-pages" ? "/karossy-foods/" : "/",
-  plugins,
+  plugins: [react(), tailwindcss(), ...(mode === "development" ? [jsxLocPlugin()] : []), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -239,4 +237,4 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
-});
+}));

@@ -470,3 +470,15 @@
 - [x] Inspect Pull Request #1 and the current Pages workflow before merging.
 - [x] Merge Pull Request #1 into `main` after confirming its validation state.
 - [x] Configure and trigger a GitHub Pages workflow from the merged source, then verify the live Pages site.
+
+# Production Backup and Audit Checklist
+
+- [x] Confirm the deployed production commit and create a GitHub backup tag and release.
+- [x] Run comprehensive accessibility and performance audits against the deployed GitHub Pages site.
+- [x] Assess the findings, document prioritized remediation guidance, and report the release location.
+
+# Accessibility and Performance Remediation Checklist
+
+- [ ] Trace the recurring 400 and deprecated-API audit signals to their responsible resources or integrations.
+- [ ] Remove the restrictive viewport zoom cap and correct audited text-contrast failures.
+- [ ] Optimise render-blocking and unused delivery work, then validate, deploy, and re-audit the live GitHub Pages site.

@@ -203,9 +203,12 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-export default defineConfig(({ mode }) => ({
-  base: process.env.VITE_DEPLOY_TARGET === "github-pages" ? "/karossy-foods/" : "/",
-  plugins: [react(), tailwindcss(), ...(mode === "development" ? [jsxLocPlugin(), vitePluginManusDebugCollector(), vitePluginStorageProxy()] : []), vitePluginManusRuntime()],
+export default defineConfig(({ mode }) => {
+  const isGitHubPages = process.env.VITE_DEPLOY_TARGET === "github-pages";
+
+  return {
+  base: isGitHubPages ? "/karossy-foods/" : "/",
+  plugins: [react(), tailwindcss(), ...(mode === "development" ? [jsxLocPlugin(), vitePluginManusDebugCollector(), vitePluginStorageProxy()] : []), ...(!isGitHubPages ? [vitePluginManusRuntime()] : [])],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -237,4 +240,5 @@ export default defineConfig(({ mode }) => ({
       deny: ["**/.*"],
     },
   },
-}));
+};
+});

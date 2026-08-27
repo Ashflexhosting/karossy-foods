@@ -469,4 +469,4 @@
 
 - [x] Inspect Pull Request #1 and the current Pages workflow before merging.
 - [x] Merge Pull Request #1 into `main` after confirming its validation state.
-- [ ] Configure and trigger a GitHub Pages workflow from the merged source, then verify the live Pages site.
+- [x] Configure and trigger a GitHub Pages workflow from the merged source, then verify the live Pages site.

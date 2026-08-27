@@ -464,3 +464,9 @@
 - [x] Create a feature branch from the synchronized Karossy Foods source and open a pull request.
 - [x] Run the production build plus link and style validation checks.
 - [x] Review the deployed live site and report the pull-request and verification results.
+
+# GitHub Pages Release Checklist
+
+- [x] Inspect Pull Request #1 and the current Pages workflow before merging.
+- [x] Merge Pull Request #1 into `main` after confirming its validation state.
+- [ ] Configure and trigger a GitHub Pages workflow from the merged source, then verify the live Pages site.
